@@ -1,0 +1,1 @@
+Fixed a bug where recipe is not showen with JEI
