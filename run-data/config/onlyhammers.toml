@@ -1,0 +1,30 @@
+#Durability of the lapis hammer.
+#Range: > 0
+DurabilityLapisHammer = 1100
+#Durability of the redstone hammer.
+#Range: > 0
+DurabilityRedstoneHammer = 1100
+#Durability of the diamond hammer.
+#Range: > 0
+DurabilityDiamondHammer = 8025
+#Durability of the gold hammer.
+#Range: > 0
+DurabilityGoldHammer = 750
+#Durability of the obsidian hammer.
+#Range: > 0
+DurabilityObsidianHammer = 11200
+#Durability of the netherite hammer.
+#Range: > 0
+DurabilityNetheriteHammer = 13675
+#Durability of the wooden hammer.
+#Range: > 0
+DurabilityWoodenHammer = 302
+#Durability of the iron hammer.
+#Range: > 0
+DurabilityIronHammer = 1300
+#Durability of the stone hammer.
+#Range: > 0
+DurabilityStoneHammer = 650
+#Durability of the emerald hammer.
+#Range: > 0
+DurabilityEmeraldHammer = 9768
