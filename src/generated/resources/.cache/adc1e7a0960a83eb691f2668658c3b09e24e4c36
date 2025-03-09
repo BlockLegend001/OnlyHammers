@@ -1,0 +1,15 @@
+// 1.21.1	2024-09-17T22:44:53.5341696	Tags for minecraft:item mod id onlyhammers
+62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/durability.json
+62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/mining.json
+62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/mining_loot.json
+62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/vanishing.json
+834d8bc039229cb4808b12451f450aa8446e4511 data/onlyhammers/tags/item/diamond_hammers.json
+05cfb51d08249f08a2d8df794ebb3acf8ef663b0 data/onlyhammers/tags/item/emerald_hammers.json
+92b881bbf484a17930e003fe29a8fb5a08c994b4 data/onlyhammers/tags/item/gold_hammers.json
+4184437fb8a2aa0af2066153f86aba002f59e26e data/onlyhammers/tags/item/iron_hammers.json
+76462d94873371f25bb3871a67e37115c0439a53 data/onlyhammers/tags/item/lapis_hammers.json
+aee56e039f84f5ad51f39af7191edc85ac8d613b data/onlyhammers/tags/item/netherite_hammers.json
+558370aac584d61496a10cf2bc50636d0347ff76 data/onlyhammers/tags/item/obsidian_hammers.json
+026faf35a82fdb986266af63a81e75322ec763bb data/onlyhammers/tags/item/redstone_hammers.json
+0be63bfbb91b9001bfcf4bb3ed41383ca4845a14 data/onlyhammers/tags/item/stone_hammers.json
+7d4d45d2ca7cd924710ba3aeccde82ceff492e5a data/onlyhammers/tags/item/wooden_hammers.json
