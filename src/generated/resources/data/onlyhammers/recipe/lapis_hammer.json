@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "minecraft:lapis_lazuli",
+    "S": "minecraft:stick",
+    "b": "minecraft:lapis_block"
+  },
+  "pattern": [
+    "bBb",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "onlyhammers:lapis_hammer"
+  }
+}
