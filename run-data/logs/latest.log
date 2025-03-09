@@ -1,0 +1,48 @@
+[17set2024 21:31:04.650] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\main\resources]
+[17set2024 21:31:04.656] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[17set2024 21:31:04.658] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.4 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
+[17set2024 21:31:04.841] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[17set2024 21:31:04.983] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/rosar/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[17set2024 21:31:06.613] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[17set2024 21:31:07.957] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\main\resources]
+[17set2024 21:31:31.693] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 52.0.16, for MC 1.21.1 with MCP 20240808.132146
+[17set2024 21:31:31.693] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v52.0.16 Initialized
+[17set2024 21:31:31.814] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[17set2024 21:31:32.149] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CenterSearch' is not a valid config key for config category 'advanced'.
+Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #5: "	CenterSearch = false"
+[17set2024 21:31:32.149] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CheatToHotbarUsingHotkeysEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #20: "	CheatToHotbarUsingHotkeysEnabled = false"
+[17set2024 21:31:32.149] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'AddBookmarksToFrontEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #25: "	AddBookmarksToFrontEnabled = true"
+[17set2024 21:31:32.151] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'GiveMode' is not a valid config key for config category 'advanced'.
+Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #40: "	GiveMode = MOUSE_PICKUP"
+[17set2024 21:31:32.151] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'RecipeGuiHeight' is not a valid config key for config category 'advanced'.
+Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #45: "	RecipeGuiHeight = 350"
+[17set2024 21:31:32.159] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[17set2024 21:31:32.170] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 8.708 ms
+[17set2024 21:31:33.438] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [onlyhammers]
+[17set2024 21:31:33.509] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.16_mapped_official_1.21.1/forge-1.21.1-52.0.16_mapped_official_1.21.1.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[17set2024 21:31:33.511] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.16_mapped_official_1.21.1/forge-1.21.1-52.0.16_mapped_official_1.21.1.jar%230!/data/.mcassetsroot' uses unexpected schema
+[17set2024 21:31:33.776] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: onlyhammers
+[17set2024 21:31:33.819] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: onlyhammers finished after 41 ms
+[17set2024 21:31:33.820] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id onlyhammers
+[17set2024 21:31:34.124] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id onlyhammers finished after 303 ms
+[17set2024 21:31:34.124] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id onlyhammers
+[17set2024 21:31:34.158] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id onlyhammers finished after 33 ms
+[17set2024 21:31:34.158] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 381 ms
+[17set2024 21:31:34.176] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 24, old count: 24, new count: 25, removed stale: 0, written: 0
