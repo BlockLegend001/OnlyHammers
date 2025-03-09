@@ -1,0 +1,2 @@
+- Fixed a bug where recipe is not showen with JEI
+- Fixed a bug where enchant is not applicated to the blocks
