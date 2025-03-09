@@ -1,0 +1,19 @@
+/give Dev onlyhammers:wooden_hammer
+/gamemode survival
+/gamemode creative
+/give Dev onlyhammers:stone_hammer
+/gamemode creative
+/gamemode survival
+/give Dev onlyhammers:stone_hammer
+/give Dev onlyhammers:netherite_hammer
+/enchant Dev minecraft:efficiency
+/gamemode creative
+/gamemode survival
+/give Dev onlyhammers:wooden_hammer
+/gamemode creative
+/enchant Dev minecraft:silk_touch
+/gamemode survival
+/enchant Dev minecraft:fortune 3
+/give Dev minecraft:diamond_ore 64
+/gamemode creative
+/gamemode survival
