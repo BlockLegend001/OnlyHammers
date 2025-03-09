@@ -1,0 +1,1 @@
+Fixed a bug where attribute of the tools was not shown
