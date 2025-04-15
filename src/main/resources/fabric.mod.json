@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "onlyhammers",
+  "version": "${version}",
+  "name": "OnlyHammers",
+  "description": "A simple mod that adds various type of hammers, that mine 3x3 area",
+  "authors": [
+    "Block_Legend001"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/onlyhammers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.blocklegend001.onlyhammers.client.OnlyHammersClient"
+    ],
+    "main": [
+      "com.blocklegend001.onlyhammers.OnlyHammers"
+    ],
+    "fabric-datagen": [
+      "com.blocklegend001.onlyhammers.datagen.ModDataGeneration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
