@@ -1,0 +1,100 @@
+[11apr2025 19:20:01.603] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[11apr2025 19:20:01.604] [main/DEBUG] [mixin/]: Selecting config neoforge.mixins.json
+[11apr2025 19:20:01.613] [main/DEBUG] [mixin/]: Selecting config mixinextras.init.mixins.json
+[11apr2025 19:20:01.674] [main/DEBUG] [MixinExtras|Service/]: com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1) is taking over from null
+[11apr2025 19:20:01.720] [main/DEBUG] [mixin/]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[11apr2025 19:20:01.722] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[11apr2025 19:20:01.724] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[11apr2025 19:20:01.726] [main/DEBUG] [mixin/]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[11apr2025 19:20:01.729] [main/DEBUG] [mixin/]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[11apr2025 19:20:01.732] [main/DEBUG] [mixin/]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[11apr2025 19:20:01.745] [main/DEBUG] [mixin/]: Preparing neoforge.mixins.json (2)
+[11apr2025 19:20:01.852] [main/DEBUG] [mixin/]: Preparing mixinextras.init.mixins.json (0)
+[11apr2025 19:20:01.862] [main/DEBUG] [mixin/]: Prepared 2 mixins in 0,256 sec (128,0ms avg) (0ms load, 0ms transform, 0ms plugin)
+[11apr2025 19:20:01.883] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[11apr2025 19:20:01.891] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[11apr2025 19:20:01.891] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[11apr2025 19:20:02.349] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[11apr2025 19:20:02.352] [main/DEBUG] [mixin/]: Registering new injector for @SugarWrapper with com.llamalad7.mixinextras.sugar.impl.SugarWrapperInjectionInfo
+[11apr2025 19:20:02.352] [main/DEBUG] [mixin/]: Registering new injector for @FactoryRedirectWrapper with com.llamalad7.mixinextras.wrapper.factory.FactoryRedirectWrapperInjectionInfo
+[11apr2025 19:20:02.359] [main/DEBUG] [mixin/]: Mixing MappedRegistryAccessor from neoforge.mixins.json into net.minecraft.core.MappedRegistry
+[11apr2025 19:20:02.365] [main/DEBUG] [mixin/]: neoforge.mixins.json:MappedRegistryAccessor from mod neoforge: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[11apr2025 19:20:03.638] [main/DEBUG] [mixin/]: Mixing BlockEntityTypeAccessor from neoforge.mixins.json into net.minecraft.world.level.block.entity.BlockEntityType
+[11apr2025 19:20:03.638] [main/DEBUG] [mixin/]: neoforge.mixins.json:BlockEntityTypeAccessor from mod neoforge: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[11apr2025 19:20:04.866] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
+[11apr2025 19:20:04.866] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 21
+[11apr2025 19:20:04.868] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
+[11apr2025 19:20:04.868] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe base methods: all available
+[11apr2025 19:20:04.869] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
+[11apr2025 19:20:04.870] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Buffer.address: available
+[11apr2025 19:20:04.871] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
+[11apr2025 19:20:04.873] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[11apr2025 19:20:04.874] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: sun.misc.Unsafe: available
+[11apr2025 19:20:04.874] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.tmpdir: C:\Users\rosar\AppData\Local\Temp (java.io.tmpdir)
+[11apr2025 19:20:04.875] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[11apr2025 19:20:04.875] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: Platform: Windows
+[11apr2025 19:20:04.876] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
+[11apr2025 19:20:04.877] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[11apr2025 19:20:04.878] [main/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
+[11apr2025 19:20:04.879] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
+[11apr2025 19:20:07.007] [main/DEBUG] [net.neoforged.neoforge.registries.GameData/REGISTRIES]: Creating vanilla freeze snapshot
+[11apr2025 19:20:07.039] [main/DEBUG] [net.neoforged.neoforge.registries.GameData/REGISTRIES]: Vanilla freeze snapshot created
+[11apr2025 19:20:07.046] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [onlyhammers]
+[11apr2025 19:20:07.048] [main/DEBUG] [net.neoforged.fml.ModWorkManager/LOADING]: Using 16 threads for parallel mod-loading
+[11apr2025 19:20:07.056] [main/DEBUG] [net.neoforged.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for [com.blocklegend001.onlyhammers.OnlyHammers]
+[11apr2025 19:20:07.063] [main/DEBUG] [net.neoforged.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for [net.neoforged.neoforge.common.NeoForgeMod, net.neoforged.neoforge.client.ClientNeoForgeMod]
+[11apr2025 19:20:07.086] [modloading-worker-0/DEBUG] [net.neoforged.neoforge.internal.versions.neoforge.NeoForgeVersion/CORE]: Found NeoForge version 21.5.22-beta
+[11apr2025 19:20:07.087] [modloading-worker-0/DEBUG] [net.neoforged.neoforge.internal.versions.neoforge.NeoForgeVersion/CORE]: Found FML version 7.0.10
+[11apr2025 19:20:07.087] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.5.22-beta, for MC 1.21.5
+[11apr2025 19:20:07.096] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for onlyhammers
+[11apr2025 19:20:07.098] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.blocklegend001.onlyhammers.datagen.DataGenerators to MOD
+[11apr2025 19:20:07.100] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.blocklegend001.onlyhammers.ModEvents to GAME
+[11apr2025 19:20:07.114] [modloading-worker-0/DEBUG] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Config file neoforge-server.toml for neoforge tracking
+[11apr2025 19:20:07.117] [modloading-worker-0/DEBUG] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Config file neoforge-common.toml for neoforge tracking
+[11apr2025 19:20:07.171] [modloading-worker-0/DEBUG] [net.neoforged.fml.config.ConfigTracker/CONFIG]: Config file neoforge-client.toml for neoforge tracking
+[11apr2025 19:20:07.200] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for neoforge
+[11apr2025 19:20:07.200] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.network.filters.GenericPacketSplitter to MOD
+[11apr2025 19:20:07.226] [modloading-worker-0/DEBUG] [io.netty.buffer.AbstractByteBuf/]: -Dio.netty.buffer.checkAccessible: true
+[11apr2025 19:20:07.226] [modloading-worker-0/DEBUG] [io.netty.buffer.AbstractByteBuf/]: -Dio.netty.buffer.checkBounds: true
+[11apr2025 19:20:07.227] [modloading-worker-0/DEBUG] [io.netty.util.ResourceLeakDetectorFactory/]: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6827b791
+[11apr2025 19:20:07.233] [modloading-worker-0/DEBUG] [io.netty.util.internal.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[11apr2025 19:20:07.233] [modloading-worker-0/DEBUG] [io.netty.util.internal.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[11apr2025 19:20:07.235] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.numHeapArenas: 32
+[11apr2025 19:20:07.235] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.numDirectArenas: 32
+[11apr2025 19:20:07.235] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.pageSize: 8192
+[11apr2025 19:20:07.237] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxOrder: 9
+[11apr2025 19:20:07.237] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.chunkSize: 4194304
+[11apr2025 19:20:07.237] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.smallCacheSize: 256
+[11apr2025 19:20:07.237] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.normalCacheSize: 64
+[11apr2025 19:20:07.238] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[11apr2025 19:20:07.238] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimInterval: 8192
+[11apr2025 19:20:07.238] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[11apr2025 19:20:07.239] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.useCacheForAllThreads: false
+[11apr2025 19:20:07.239] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[11apr2025 19:20:07.239] [modloading-worker-0/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+[11apr2025 19:20:07.245] [modloading-worker-0/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.allocator.type: pooled
+[11apr2025 19:20:07.245] [modloading-worker-0/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.threadLocalDirectBufferSize: 0
+[11apr2025 19:20:07.245] [modloading-worker-0/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[11apr2025 19:20:07.251] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.network.NetworkInitialization to MOD
+[11apr2025 19:20:07.252] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.network.ConfigurationInitialization to MOD
+[11apr2025 19:20:07.254] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.model.data.ModelDataManager to GAME
+[11apr2025 19:20:07.256] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.common.MonsterRoomHooks to GAME
+[11apr2025 19:20:07.256] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.client.ParticleBoundsDebugRenderer to GAME
+[11apr2025 19:20:07.261] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.client.NeoForgeRenderPipelines to MOD
+[11apr2025 19:20:07.279] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.client.BlockEntityRenderBoundsDebugRenderer to GAME
+[11apr2025 19:20:07.280] [modloading-worker-0/DEBUG] [net.neoforged.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.neoforged.neoforge.attachment.AttachmentInternals to GAME
+[11apr2025 19:20:07.302] [modloading-sync-worker/DEBUG] [net.neoforged.neoforge.registries.GameData/REGISTRIES]: Unfreezing registries
+[11apr2025 19:20:07.398] [modloading-sync-worker/DEBUG] [net.neoforged.neoforge.registries.GameData/REGISTRIES]: Freezing registries
+[11apr2025 19:20:07.412] [modloading-sync-worker/DEBUG] [net.neoforged.neoforge.registries.GameData/REGISTRIES]: All registries frozen
+[11apr2025 19:20:07.498] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Programmazione/Mod/Only%20Hammers/NEOFORGE/1.21.5/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.5.22-beta/neoforge-21.5.22-beta.jar%23221!/assets/.mcassetsroot' uses unexpected schema
+[11apr2025 19:20:07.499] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Programmazione/Mod/Only%20Hammers/NEOFORGE/1.21.5/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.5.22-beta/neoforge-21.5.22-beta.jar%23221!/data/.mcassetsroot' uses unexpected schema
+[11apr2025 19:20:07.949] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Model Definitions - onlyhammers
+[11apr2025 19:20:08.030] [main/INFO] [net.minecraft.data.DataGenerator/]: Model Definitions - onlyhammers finished after 79 ms
+[11apr2025 19:20:08.031] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id onlyhammers
+[11apr2025 19:20:08.035] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id onlyhammers finished after 3 ms
+[11apr2025 19:20:08.035] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id onlyhammers
+[11apr2025 19:20:08.045] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id onlyhammers finished after 10 ms
+[11apr2025 19:20:08.046] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[11apr2025 19:20:08.098] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 51 ms
+[11apr2025 19:20:08.098] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 149 ms
+[11apr2025 19:20:08.101] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 58, old count: 58, new count: 59, removed stale: 0, written: 0
