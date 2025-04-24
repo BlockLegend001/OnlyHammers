@@ -233,7 +233,6 @@ publishMods {
         accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
         projectId = "909723"
         minecraftVersions.add(minecraft_version)
-        javaVersions.add(JavaVersion.VERSION_21)
         clientRequired = true
         serverRequired = true
     }
@@ -243,4 +242,10 @@ publishMods {
         projectId = "p5wmRC3H"
         minecraftVersions.add(minecraft_version)
     }
+}
+
+tasks.publishMods.group = "other"
+tasks.register("publishAll") {
+    group = "publishing"
+    dependsOn(tasks.publishMods)
 }
