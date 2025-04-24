@@ -13,7 +13,7 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.blocklegend001.onlyhammers.client.OnlyHammersClient"
+      "com.blocklegend001.onlyhammers.OnlyHammersClient"
     ],
     "main": [
       "com.blocklegend001.onlyhammers.OnlyHammers"
