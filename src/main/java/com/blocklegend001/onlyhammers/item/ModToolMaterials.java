@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements Tier {
 
     WOODEN_HAMMER(BlockTags.INCORRECT_FOR_WOODEN_TOOL, ModConfigs.durabilityWoodenHammer, 2.0F, 0.0F, 15, () -> Ingredient.of(ItemTags.PLANKS)),
-    STONE_HAMMER(BlockTags.INCORRECT_FOR_STONE_TOOL, ModConfigs.durabilityStoneHammer, 4.0F, 1.0F, 5, () -> Ingredient.of(Tags.Items.COBBLESTONE)),
+    STONE_HAMMER(BlockTags.INCORRECT_FOR_STONE_TOOL, ModConfigs.durabilityStoneHammer, 4.0F, 1.0F, 5, () -> Ingredient.of(Tags.Items.COBBLESTONES)),
     IRON_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityIronHammer, 6.0F, 2.0F, 14, () -> Ingredient.of(Items.IRON_INGOT)),
     GOLD_HAMMER(BlockTags.INCORRECT_FOR_GOLD_TOOL, ModConfigs.durabilityGoldHammer, 12.0F, 0.0F, 22, () -> Ingredient.of(Items.GOLD_INGOT)),
     LAPIS_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityLapisHammer, 6.0F, 2.0F, 14, () -> Ingredient.of(Items.LAPIS_LAZULI)),
