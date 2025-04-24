@@ -1,1 +1,1 @@
-- Fixed datagen not runned correctly (textures and more were not generated)
+- Added Highlights Outline to the Blocks
