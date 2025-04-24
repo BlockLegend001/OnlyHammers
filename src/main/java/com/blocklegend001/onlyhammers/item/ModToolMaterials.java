@@ -1,100 +1,130 @@
 package com.blocklegend001.onlyhammers.item;
 
 import com.blocklegend001.onlyhammers.ModConfigs;
-import com.blocklegend001.onlyhammers.utils.ModTags;
+import net.minecraft.core.HolderGetter;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.component.Tool;
+import net.minecraft.world.level.block.Block;
 
-public class ModToolMaterials {
+import java.util.List;
 
-    public static final ToolMaterial WOODEN_HAMMER = new ToolMaterial(
+public record ModToolMaterials(TagKey<Block> incorrectBlocksForDrops, int durability, float speed,
+                               float attackDamageBonus, int enchantmentValue) {
+
+    public static final ModToolMaterials WOODEN_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_WOODEN_TOOL,
             ModConfigs.durabilityWoodenHammer,
             2,
             0.0F,
-            15,
-            ItemTags.WOODEN_TOOL_MATERIALS
+            15
     );
 
-    public static final ToolMaterial STONE_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials STONE_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_STONE_TOOL,
             ModConfigs.durabilityStoneHammer,
             4,
             1.0F,
-            5,
-            ItemTags.STONE_TOOL_MATERIALS
+            5
     );
 
-    public static final ToolMaterial IRON_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials IRON_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
             ModConfigs.durabilityIronHammer,
             6,
             2.0F,
-            14,
-            ItemTags.IRON_TOOL_MATERIALS
+            14
     );
 
-    public static final ToolMaterial GOLD_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials GOLD_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_GOLD_TOOL,
             ModConfigs.durabilityGoldHammer,
             12,
             0.0F,
-            22,
-            ItemTags.GOLD_TOOL_MATERIALS
+            22
     );
 
-    public static final ToolMaterial LAPIS_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials LAPIS_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
             ModConfigs.durabilityLapisHammer,
             6,
             2.0F,
-            14,
-            ModTags.Items.LAPIS_HAMMERS_REPAIRS
+            14
     );
 
-    public static final ToolMaterial REDSTONE_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials REDSTONE_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
             ModConfigs.durabilityRedstoneHammer,
             6,
             2.0F,
-            14,
-            ModTags.Items.REDSTONE_HAMMERS_REPAIRS
+            14
     );
 
-    public static final ToolMaterial DIAMOND_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials DIAMOND_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
             ModConfigs.durabilityDiamondHammer,
             8,
             3.0F,
-            10,
-            ItemTags.DIAMOND_TOOL_MATERIALS
+            10
     );
 
-    public static final ToolMaterial EMERALD_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials EMERALD_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             ModConfigs.durabilityEmeraldHammer,
             9,
             4.0F,
-            15,
-            ModTags.Items.EMERALD_HAMMERS_REPAIRS
+            15
     );
 
-    public static final ToolMaterial OBSIDIAN_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials OBSIDIAN_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             ModConfigs.durabilityObsidianHammer,
             9,
             4.0F,
-            10,
-            ModTags.Items.OBSIDIAN_HAMMERS_REPAIRS
+            10
     );
 
-    public static final ToolMaterial NETHERITE_HAMMER = new ToolMaterial(
+    public static final ModToolMaterials NETHERITE_HAMMER = new ModToolMaterials(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
             ModConfigs.durabilityNetheriteHammer,
             9,
             4.0F,
-            15,
-            ItemTags.NETHERITE_TOOL_MATERIALS
+            15
     );
+
+    private Item.Properties applyCommonProperties(Item.Properties props) {
+        return props
+                .durability(this.durability)
+                .enchantable(this.enchantmentValue);
+    }
+
+    private ItemAttributeModifiers createToolAttributes(float attackDamage, float attackSpeed) {
+        return ItemAttributeModifiers.builder()
+                .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, attackDamage + this.attackDamageBonus, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+                .add(Attributes.ATTACK_SPEED, new AttributeModifier(Item.BASE_ATTACK_SPEED_ID, attackSpeed, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+                .build();
+    }
+
+    public Item.Properties applyPickaxeProperties(Item.Properties properties, TagKey<Block> effectiveBlocks, float damage, float speed) {
+        HolderGetter<Block> blockGetter = BuiltInRegistries.acquireBootstrapRegistrationLookup(BuiltInRegistries.BLOCK);
+
+        return applyCommonProperties(properties)
+                .component(DataComponents.TOOL, new Tool(
+                        List.of(
+                                Tool.Rule.deniesDrops(blockGetter.getOrThrow(this.incorrectBlocksForDrops)),
+                                Tool.Rule.minesAndDrops(blockGetter.getOrThrow(effectiveBlocks), this.speed)
+                        ),
+                        1.0F,
+                        1,
+                        false
+                ))
+                .attributes(createToolAttributes(damage, speed));
+    }
 }
