@@ -3,6 +3,7 @@ package com.blocklegend001.onlyhammers;
 import com.blocklegend001.onlyhammers.config.ModConfigs;
 import com.blocklegend001.onlyhammers.item.ModItemGroup;
 import com.blocklegend001.onlyhammers.item.ModItems;
+import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
 import com.blocklegend001.onlyhammers.utils.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
@@ -18,6 +19,7 @@ public class OnlyHammers implements ModInitializer {
         ModConfigs.registerConfigs();
         ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
+        HammerOverlayRenderer.init();
         PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
     }
 }
