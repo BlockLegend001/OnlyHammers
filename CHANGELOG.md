@@ -1,1 +1,1 @@
-- Added REI compatibility
+- Added Highlights Outline to the Blocks
