@@ -19,7 +19,6 @@ public class OnlyHammers implements ModInitializer {
         ModConfigs.registerConfigs();
         ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
-        HammerOverlayRenderer.init();
         PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
     }
 }
