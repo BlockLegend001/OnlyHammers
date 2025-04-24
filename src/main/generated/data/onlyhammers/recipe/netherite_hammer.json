@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:netherite_ingot",
+  "base": "onlyhammers:diamond_hammer",
+  "result": {
+    "count": 1,
+    "id": "onlyhammers:netherite_hammer"
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}
