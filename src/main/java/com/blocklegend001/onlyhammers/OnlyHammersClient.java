@@ -1,4 +1,4 @@
-package com.blocklegend001.onlyhammers.client;
+package com.blocklegend001.onlyhammers;
 
 import net.fabricmc.api.ClientModInitializer;
 
