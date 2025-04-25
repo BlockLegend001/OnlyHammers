@@ -1,6 +1,7 @@
 package com.blocklegend001.onlyhammers;
 
 import com.blocklegend001.onlyhammers.item.ModItems;
+import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -41,6 +42,7 @@ public class OnlyHammers {
         ModConfigs.loadConfig();
         NeoForge.EVENT_BUS.register(ModEvents.class);
         ModItems.register(modEventBus);
+        NeoForge.EVENT_BUS.register(HammerOverlayRenderer.class);
         CREATIVE_MODE_TABS.register(modEventBus);
     }
 }
