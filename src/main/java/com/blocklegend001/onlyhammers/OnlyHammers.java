@@ -1,15 +1,14 @@
 package com.blocklegend001.onlyhammers;
 
 import com.blocklegend001.onlyhammers.item.ModItems;
+import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -43,6 +42,7 @@ public class OnlyHammers {
         ModConfigs.loadConfig();
         NeoForge.EVENT_BUS.register(ModEvents.class);
         ModItems.register(modEventBus);
+        NeoForge.EVENT_BUS.register(HammerOverlayRenderer.class);
         CREATIVE_MODE_TABS.register(modEventBus);
     }
 }
