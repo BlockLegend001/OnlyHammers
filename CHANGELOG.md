@@ -1,0 +1,1 @@
+- Added Highlights Outline to the Blocks
