@@ -1,1 +1,1 @@
-- Added Highlights Outline to the Blocks
+- Now you can break block in creative mode
