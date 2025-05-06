@@ -14,28 +14,38 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashSet;
 import java.util.Set;
 
+import static com.blocklegend001.onlyhammers.item.custom.Hammer.getBlocksToBeDestroyed;
+
 public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
+    public static boolean isSneaking = false;
 
     @Override
     public boolean beforeBlockBreak(World world, PlayerEntity player, BlockPos pos,
                                     BlockState state, @Nullable BlockEntity blockEntity) {
+        if (!(player instanceof ServerPlayerEntity serverPlayer)) return true;
+
         ItemStack mainHandItem = player.getMainHandStack();
+        if (!(mainHandItem.getItem() instanceof Hammer excavator)) return true;
 
-        if(mainHandItem.getItem() instanceof Hammer hammer && player instanceof ServerPlayerEntity serverPlayer) {
-            if(HARVESTED_BLOCKS.contains(pos)) {
-                return true;
+        if (HARVESTED_BLOCKS.contains(pos)) return true;
+
+        HARVESTED_BLOCKS.add(pos);
+
+        try {
+            int radius = isSneaking ? 0 : 1;
+            for (BlockPos targetPos : getBlocksToBeDestroyed(radius, pos, serverPlayer)) {
+                if (targetPos.equals(pos)) continue;
+
+                if (HARVESTED_BLOCKS.contains(targetPos)) continue;
+                if (!excavator.isCorrectForDrops(mainHandItem, world.getBlockState(targetPos))) continue;
+
+                HARVESTED_BLOCKS.add(targetPos);
+                serverPlayer.interactionManager.tryBreakBlock(targetPos);
+                HARVESTED_BLOCKS.remove(targetPos);
             }
-
-            for(BlockPos position : Hammer.getBlocksToBeDestroyed(1, pos, serverPlayer)) {
-                if(pos == position || !hammer.isCorrectForDrops(mainHandItem, world.getBlockState(position))) {
-                    continue;
-                }
-
-                HARVESTED_BLOCKS.add(position);
-                serverPlayer.interactionManager.tryBreakBlock(position);
-                HARVESTED_BLOCKS.remove(position);
-            }
+        } finally {
+            HARVESTED_BLOCKS.remove(pos);
         }
 
         return true;
