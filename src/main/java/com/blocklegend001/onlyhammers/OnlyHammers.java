@@ -28,7 +28,6 @@ public class OnlyHammers {
         ModConfigs.loadConfig(ModConfigs.SPEC, FMLPaths.CONFIGDIR.get().resolve("onlyhammers.toml"));
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
-        MinecraftForge.EVENT_BUS.register(HammerOverlayRender.class);
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
