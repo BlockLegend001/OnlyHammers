@@ -1,7 +1,7 @@
 package com.blocklegend001.onlyhammers;
 
+import com.blocklegend001.onlyhammers.event.ModEvents;
 import com.blocklegend001.onlyhammers.item.ModItems;
-import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;

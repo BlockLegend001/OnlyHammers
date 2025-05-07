@@ -7,10 +7,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.Camera;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.GameRenderer;
-import net.minecraft.client.renderer.LevelRenderer;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
@@ -27,8 +24,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LevelRenderer.class)
 public class LevelRendererMixin {
+
     @Inject(method = "renderLevel", at = @At("TAIL"))
-    private void renderLevelAfter(GraphicsResourceAllocator p_367325_, DeltaTracker p_342180_, boolean p_109603_, Camera p_109604_, GameRenderer p_109605_, Matrix4f p_254120_, Matrix4f p_330527_, CallbackInfo ci) {
+    private void renderLevelAfter(GraphicsResourceAllocator p_361796_, DeltaTracker p_348530_, boolean p_109603_, Camera p_109604_, GameRenderer p_109605_, Matrix4f p_254120_, Matrix4f p_323920_, CallbackInfo ci) {
 
         if (Minecraft.getInstance().level == null || Minecraft.getInstance().player == null) {
             return;
@@ -45,7 +43,12 @@ public class LevelRendererMixin {
 
         BlockPos origin = blockHit.getBlockPos();
         Direction side = blockHit.getDirection();
-        int range = 1;
+        int range;
+        if (Minecraft.getInstance().player.isShiftKeyDown()) {
+            range = 0;
+        } else {
+            range = 1;
+        }
 
         if (!Minecraft.getInstance().level.getBlockState(origin).is(BlockTags.MINEABLE_WITH_PICKAXE)) {
             return;
