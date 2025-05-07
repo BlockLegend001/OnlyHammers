@@ -2,13 +2,11 @@ package com.blocklegend001.onlyhammers;
 
 import com.blocklegend001.onlyhammers.item.ModCreativeModeTabs;
 import com.blocklegend001.onlyhammers.item.ModItems;
-import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -28,7 +26,6 @@ public class OnlyHammers {
         ModConfigs.loadConfig(ModConfigs.SPEC, FMLPaths.CONFIGDIR.get().resolve("onlyhammers.toml"));
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
-        MinecraftForge.EVENT_BUS.register(HammerOverlayRenderer.class);
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
