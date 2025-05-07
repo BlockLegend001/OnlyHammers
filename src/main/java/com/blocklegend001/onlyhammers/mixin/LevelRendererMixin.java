@@ -49,7 +49,7 @@ public class LevelRendererMixin {
             range = 1;
         }
 
-        if (!Minecraft.getInstance().level.getBlockState(origin).is(BlockTags.MINEABLE_WITH_SHOVEL)) {
+        if (!Minecraft.getInstance().level.getBlockState(origin).is(BlockTags.MINEABLE_WITH_PICKAXE)) {
             return;
         }
 
