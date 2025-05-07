@@ -10,5 +10,6 @@ public class ModDataGeneration implements DataGeneratorEntrypoint {
 
         pack.addProvider(ModModelProvider::new);
         pack.addProvider(ModItemTagsGeneration::new);
+        pack.addProvider(ModRecipeProvider::new);
     }
 }
