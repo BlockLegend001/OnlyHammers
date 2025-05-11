@@ -1,2 +1,2 @@
-- If the player is sneaking (shift held), the Excavator will only break the single targeted block.
-- Changed Recipe Registry System
+- Added Argentine Spanish Language
+- Changed Stone Hammer Recipe
