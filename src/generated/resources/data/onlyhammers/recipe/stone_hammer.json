@@ -3,14 +3,17 @@
   "category": "equipment",
   "key": {
     "B": {
-      "tag": "minecraft:stone_crafting_materials"
+      "item": "minecraft:stone"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "BBB",
+    "BCB",
     " S ",
     " S "
   ],
