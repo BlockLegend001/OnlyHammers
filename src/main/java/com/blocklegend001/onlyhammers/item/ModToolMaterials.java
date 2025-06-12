@@ -15,16 +15,16 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements Tier {
 
-    WOODEN_HAMMER(BlockTags.INCORRECT_FOR_WOODEN_TOOL, ModConfigs.durabilityWoodenHammer, 2.0F, 0.0F, 15, () -> Ingredient.of(ItemTags.PLANKS)),
-    STONE_HAMMER(BlockTags.INCORRECT_FOR_STONE_TOOL, ModConfigs.durabilityStoneHammer, 4.0F, 1.0F, 5, () -> Ingredient.of(Tags.Items.COBBLESTONE)),
-    IRON_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityIronHammer, 6.0F, 2.0F, 14, () -> Ingredient.of(Items.IRON_INGOT)),
-    GOLD_HAMMER(BlockTags.INCORRECT_FOR_GOLD_TOOL, ModConfigs.durabilityGoldHammer, 12.0F, 0.0F, 22, () -> Ingredient.of(Items.GOLD_INGOT)),
-    LAPIS_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityLapisHammer, 6.0F, 2.0F, 14, () -> Ingredient.of(Items.LAPIS_LAZULI)),
-    REDSTONE_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityRedstoneHammer, 6.0F, 2.0F, 14, () -> Ingredient.of(Items.REDSTONE)),
-    DIAMOND_HAMMER(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, ModConfigs.durabilityDiamondHammer, 8.0F, 3.0F, 10, () -> Ingredient.of(Items.DIAMOND)),
-    EMERALD_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, ModConfigs.durabilityEmeraldHammer, 9.0F, 4.0F, 15, () -> Ingredient.of(Items.EMERALD)),
-    OBSIDIAN_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, ModConfigs.durabilityObsidianHammer, 9.0F, 4.0F, 10, () -> Ingredient.of(Blocks.OBSIDIAN)),
-    NETHERITE_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, ModConfigs.durabilityNetheriteHammer, 9.0F, 4.0F, 15, () -> Ingredient.of(Items.NETHERITE_INGOT));
+    WOODEN_HAMMER(BlockTags.INCORRECT_FOR_WOODEN_TOOL, ModConfigs.durabilityWoodenHammer.get(), 2.0F, 0.0F, 15, () -> Ingredient.of(ItemTags.PLANKS)),
+    STONE_HAMMER(BlockTags.INCORRECT_FOR_STONE_TOOL, ModConfigs.durabilityStoneHammer.get(), 4.0F, 1.0F, 5, () -> Ingredient.of(Tags.Items.COBBLESTONE)),
+    IRON_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityIronHammer.get(), 6.0F, 2.0F, 14, () -> Ingredient.of(Items.IRON_INGOT)),
+    GOLD_HAMMER(BlockTags.INCORRECT_FOR_GOLD_TOOL, ModConfigs.durabilityGoldHammer.get(), 12.0F, 0.0F, 22, () -> Ingredient.of(Items.GOLD_INGOT)),
+    LAPIS_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityLapisHammer.get(), 6.0F, 2.0F, 14, () -> Ingredient.of(Items.LAPIS_LAZULI)),
+    REDSTONE_HAMMER(BlockTags.INCORRECT_FOR_IRON_TOOL, ModConfigs.durabilityRedstoneHammer.get(), 6.0F, 2.0F, 14, () -> Ingredient.of(Items.REDSTONE)),
+    DIAMOND_HAMMER(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, ModConfigs.durabilityDiamondHammer.get(), 8.0F, 3.0F, 10, () -> Ingredient.of(Items.DIAMOND)),
+    EMERALD_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, ModConfigs.durabilityEmeraldHammer.get(), 9.0F, 4.0F, 15, () -> Ingredient.of(Items.EMERALD)),
+    OBSIDIAN_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, ModConfigs.durabilityObsidianHammer.get(), 9.0F, 4.0F, 10, () -> Ingredient.of(Blocks.OBSIDIAN)),
+    NETHERITE_HAMMER(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, ModConfigs.durabilityNetheriteHammer.get(), 9.0F, 4.0F, 15, () -> Ingredient.of(Items.NETHERITE_INGOT));
 
     private final TagKey<Block> incorrect;
     private final int uses;

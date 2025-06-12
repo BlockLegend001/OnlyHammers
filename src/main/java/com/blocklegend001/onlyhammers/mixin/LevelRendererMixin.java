@@ -2,6 +2,7 @@ package com.blocklegend001.onlyhammers.mixin;
 
 import com.blocklegend001.onlyhammers.item.custom.Hammer;
 import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
+import com.blocklegend001.onlyhammers.utils.RadiusMap;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.Camera;
 import net.minecraft.client.DeltaTracker;
@@ -45,7 +46,7 @@ public class LevelRendererMixin {
         if (Minecraft.getInstance().player.isShiftKeyDown()) {
             range = 0;
         } else {
-            range = 1;
+            range = RadiusMap.getHammerRadius().get(heldItem.getItem());
         }
 
 
