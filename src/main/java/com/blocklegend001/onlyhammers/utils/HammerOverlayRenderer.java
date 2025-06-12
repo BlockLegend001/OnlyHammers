@@ -13,6 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.Direction;
 import org.joml.Matrix4f;
 
+import static com.blocklegend001.onlyhammers.utils.RadiusMap.HAMMER_RADIUS_MAP;
+
 public class HammerOverlayRenderer {
     public static void init() {
         WorldRenderEvents.AFTER_ENTITIES.register(context -> {
@@ -30,7 +32,7 @@ public class HammerOverlayRenderer {
             if (client.player.isSneaking()) {
                 range = 0;
             } else {
-                range = 1;
+                range = HAMMER_RADIUS_MAP.get(heldItem.getItem());
             }
 
             if (!client.world.getBlockState(origin).isIn(BlockTags.PICKAXE_MINEABLE)) return;
