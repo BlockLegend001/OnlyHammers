@@ -20,6 +20,10 @@ public class ModConfigProvider implements SimpleConfig.DefaultConfig{
                 + comment + " | default: " + keyValuePair.getSecond() + "\n";
     }
 
+    public void addComment(String title) {
+        configContents += "\n# --- " + title + " ---\n";
+    }
+
     @Override
     public String get(String namespace) {
         return configContents;
