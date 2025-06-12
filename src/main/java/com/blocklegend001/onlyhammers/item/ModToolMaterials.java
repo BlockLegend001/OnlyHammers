@@ -10,7 +10,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial WOODEN_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_WOODEN_TOOL,
-            ModConfigs.durabilityWoodenHammer,
+            ModConfigs.durabilityWoodenHammer.get(),
             2,
             0.0F,
             15,
@@ -19,7 +19,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial STONE_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_STONE_TOOL,
-            ModConfigs.durabilityStoneHammer,
+            ModConfigs.durabilityStoneHammer.get(),
             4,
             1.0F,
             5,
@@ -28,7 +28,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial IRON_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
-            ModConfigs.durabilityIronHammer,
+            ModConfigs.durabilityIronHammer.get(),
             6,
             2.0F,
             14,
@@ -37,7 +37,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial GOLD_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_GOLD_TOOL,
-            ModConfigs.durabilityGoldHammer,
+            ModConfigs.durabilityGoldHammer.get(),
             12,
             0.0F,
             22,
@@ -46,7 +46,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial LAPIS_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
-            ModConfigs.durabilityLapisHammer,
+            ModConfigs.durabilityLapisHammer.get(),
             6,
             2.0F,
             14,
@@ -55,7 +55,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial REDSTONE_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
-            ModConfigs.durabilityRedstoneHammer,
+            ModConfigs.durabilityRedstoneHammer.get(),
             6,
             2.0F,
             14,
@@ -64,7 +64,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial DIAMOND_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
-            ModConfigs.durabilityDiamondHammer,
+            ModConfigs.durabilityDiamondHammer.get(),
             8,
             3.0F,
             10,
@@ -73,7 +73,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial EMERALD_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
-            ModConfigs.durabilityEmeraldHammer,
+            ModConfigs.durabilityEmeraldHammer.get(),
             9,
             4.0F,
             15,
@@ -82,7 +82,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial OBSIDIAN_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
-            ModConfigs.durabilityObsidianHammer,
+            ModConfigs.durabilityObsidianHammer.get(),
             9,
             4.0F,
             10,
@@ -91,7 +91,7 @@ public class ModToolMaterials {
 
     public static final ToolMaterial NETHERITE_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
-            ModConfigs.durabilityNetheriteHammer,
+            ModConfigs.durabilityNetheriteHammer.get(),
             9,
             4.0F,
             15,
