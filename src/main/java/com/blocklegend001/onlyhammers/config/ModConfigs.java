@@ -18,6 +18,17 @@ public class ModConfigs {
     public static int DurabilityEmeraldHammer;
     public static int DurabilityNetheriteHammer;
 
+    public static int RadiusWoodenHammer;
+    public static int RadiusStoneHammer;
+    public static int RadiusIronHammer;
+    public static int RadiusGoldHammer;
+    public static int RadiusLapisHammer;
+    public static int RadiusRedstoneHammer;
+    public static int RadiusObsidianHammer;
+    public static int RadiusDiamondHammer;
+    public static int RadiusEmeraldHammer;
+    public static int RadiusNetheriteHammer;
+
     public static void registerConfigs() {
         configs = new ModConfigProvider();
         createConfigs();
@@ -28,6 +39,8 @@ public class ModConfigs {
     }
 
     private static void createConfigs() {
+        configs.addComment("Hammer Durability Settings");
+
         configs.addKeyValuePair(new Pair<>("DurabilityWoodenHammer", 302), "Durability of the Wooden Hammer");
         configs.addKeyValuePair(new Pair<>("DurabilityStoneHammer", 650), "Durability of the Stone Hammer");
         configs.addKeyValuePair(new Pair<>("DurabilityIronHammer", 1300), "Durability of the Iron Hammer");
@@ -38,6 +51,19 @@ public class ModConfigs {
         configs.addKeyValuePair(new Pair<>("DurabilityDiamondHammer", 8025), "Durability of the Diamond Hammer");
         configs.addKeyValuePair(new Pair<>("DurabilityEmeraldHammer", 9768), "Durability of the Emerald Hammer");
         configs.addKeyValuePair(new Pair<>("DurabilityNetheriteHammer", 13675), "Durability of the Netherite Hammer");
+
+        configs.addComment("Hammer Radius Settings");
+
+        configs.addKeyValuePair(new Pair<>("RadiusWoodenHammer", 1), "Hammering radius for Wooden Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusStoneHammer", 1), "Hammering radius for Stone Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusIronHammer", 1), "Hammering radius for Iron Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusGoldHammer", 1), "Hammering radius for Gold Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusLapisHammer", 1), "Hammering radius for Lapis Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusRedstoneHammer", 1), "Hammering radius for Redstone Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusObsidianHammer", 1), "Hammering radius for Obsidian Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusDiamondHammer", 1), "Hammering radius for Diamond Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusEmeraldHammer", 1), "Hammering radius for Emerald Hammer (radius 1 = 3×1 area)");
+        configs.addKeyValuePair(new Pair<>("RadiusNetheriteHammer", 1), "Hammering radius for Netherite Hammer (radius 1 = 3×1 area)");
     }
 
     private static void assignConfigs() {
@@ -51,6 +77,17 @@ public class ModConfigs {
         DurabilityDiamondHammer = CONFIG.getOrDefault("DurabilityDiamondHammer", 8025);
         DurabilityEmeraldHammer = CONFIG.getOrDefault("DurabilityEmeraldHammer", 9768);
         DurabilityNetheriteHammer = CONFIG.getOrDefault("DurabilityNetheriteHammer", 13675);
+
+        RadiusWoodenHammer = CONFIG.getOrDefault("RadiusWoodenHammer", 1);
+        RadiusStoneHammer = CONFIG.getOrDefault("RadiusStoneHammer", 1);
+        RadiusIronHammer = CONFIG.getOrDefault("RadiusIronHammer", 1);
+        RadiusGoldHammer = CONFIG.getOrDefault("RadiusGoldHammer", 1);
+        RadiusLapisHammer = CONFIG.getOrDefault("RadiusLapisHammer", 1);
+        RadiusRedstoneHammer = CONFIG.getOrDefault("RadiusRedstoneHammer", 1);
+        RadiusObsidianHammer = CONFIG.getOrDefault("RadiusObsidianHammer", 1);
+        RadiusDiamondHammer = CONFIG.getOrDefault("RadiusDiamondHammer", 1);
+        RadiusEmeraldHammer = CONFIG.getOrDefault("RadiusEmeraldHammer", 1);
+        RadiusNetheriteHammer = CONFIG.getOrDefault("RadiusNetheriteHammer", 1);
 
         System.out.println("All " + configs.getConfigsList().size() + " have been set properly");
     }
