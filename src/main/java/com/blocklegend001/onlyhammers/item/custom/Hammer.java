@@ -6,9 +6,12 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
@@ -19,6 +22,8 @@ import net.minecraft.world.World;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import static com.blocklegend001.onlyhammers.utils.RadiusMap.HAMMER_RADIUS_MAP;
 
 public class Hammer extends MiningToolItem {
     public Hammer(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
@@ -62,5 +67,26 @@ public class Hammer extends MiningToolItem {
         }
 
         return positions;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        int radius = getRadiusForExcavator(stack);
+
+        Text text = Text.empty()
+                .append(Text.literal("Break Radius: ").formatted(Formatting.GRAY))
+                .append(Text.literal(String.valueOf(radius)).formatted(Formatting.YELLOW))
+                .append(Text.literal(" Blocks").formatted(Formatting.GRAY));
+
+        tooltip.add(text);
+
+        super.appendTooltip(stack, context, tooltip, type);
+    }
+
+    private int getRadiusForExcavator(ItemStack stack) {
+        if (HAMMER_RADIUS_MAP.containsKey(stack.getItem())) {
+            return HAMMER_RADIUS_MAP.get(stack.getItem());
+        }
+        return 0;
     }
 }
