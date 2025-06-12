@@ -1,11 +1,16 @@
 package com.blocklegend001.onlyhammers.item.custom;
 
+import com.blocklegend001.onlyhammers.utils.RadiusMap;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.DiggerItem;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -52,5 +57,26 @@ public class Hammer extends DiggerItem {
             }
         }
         return positions;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag type) {
+        int radius = getRadiusForExcavator(stack);
+
+        Component text = Component.empty()
+                .append(Component.literal("Break Radius: ").withStyle(ChatFormatting.GRAY))
+                .append(Component.literal(String.valueOf(radius)).withStyle(ChatFormatting.YELLOW))
+                .append(Component.literal(" Blocks").withStyle(ChatFormatting.GRAY));
+
+        tooltip.add(text);
+
+        super.appendHoverText(stack, context, tooltip, type);
+    }
+
+    private int getRadiusForExcavator(ItemStack stack) {
+        if (RadiusMap.getHammerRadius().containsKey(stack.getItem())) {
+            return RadiusMap.getHammerRadius().get(stack.getItem());
+        }
+        return 0;
     }
 }
