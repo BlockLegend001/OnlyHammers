@@ -122,6 +122,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("BBB")
                 .pattern(" S ")
                 .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('B', Blocks.OBSIDIAN)
                 .unlockedBy(getHasName(Items.OBSIDIAN), has(Items.OBSIDIAN))
                 .save(this.output);
 
