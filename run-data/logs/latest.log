@@ -1,23 +1,60 @@
-[29lug2024 18:11:23.223] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\main\resources]
-[29lug2024 18:11:23.238] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.3+9-LTS
-[29lug2024 18:11:23.240] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.3 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
-[29lug2024 18:11:23.381] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[29lug2024 18:11:23.500] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/rosar/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
-[29lug2024 18:11:24.722] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[29lug2024 18:11:25.568] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\main\resources]
-[29lug2024 18:11:32.270] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.21, for MC 1.21 with MCP 20240613.102039
-[29lug2024 18:11:32.272] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.21 Initialized
-[29lug2024 18:11:32.342] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[29lug2024 18:11:32.665] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[29lug2024 18:11:32.672] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 5.265 ms
-[29lug2024 18:11:33.154] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [onlyhammers]
-[29lug2024 18:11:33.245] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.21_mapped_official_1.21/forge-1.21-51.0.21_mapped_official_1.21.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[29lug2024 18:11:33.246] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.21_mapped_official_1.21/forge-1.21-51.0.21_mapped_official_1.21.jar%230!/data/.mcassetsroot' uses unexpected schema
-[29lug2024 18:11:33.366] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: onlyhammers
-[29lug2024 18:11:33.383] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: onlyhammers finished after 16 ms
-[29lug2024 18:11:33.383] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id onlyhammers
-[29lug2024 18:11:33.547] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id onlyhammers finished after 163 ms
-[29lug2024 18:11:33.547] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id onlyhammers
-[29lug2024 18:11:33.575] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id onlyhammers finished after 27 ms
-[29lug2024 18:11:33.576] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 209 ms
-[29lug2024 18:11:33.583] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 24, old count: 10, new count: 25, removed stale: 0, written: 14
+[12giu2025 23:24:34.926] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\main\resources, --mixin.config, onlyhammers.mixins.json]
+[12giu2025 23:24:34.931] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.6+7-LTS
+[12giu2025 23:24:34.932] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.6 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
+[12giu2025 23:24:35.033] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[12giu2025 23:24:35.115] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/rosar/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[12giu2025 23:24:35.764] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[12giu2025 23:24:36.455] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21\src\main\resources]
+[12giu2025 23:24:36.481] [main/WARN] [mixin/]: Reference map 'onlyexcavators.refmap.json' for onlyhammers.mixins.json could not be read. If this is a development environment you can ignore this message
+[12giu2025 23:24:36.548] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[12giu2025 23:24:40.422] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[12giu2025 23:24:40.422] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[12giu2025 23:24:40.429] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file D:\Programmazione\Mod\Only Hammers\FORGE\1.21\run-data\config\onlyhammers.toml is not correct. Correcting
+[12giu2025 23:24:40.433] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings was corrected from null to its default, SynchronizedConfig{DataHolder:{}}. 
+[12giu2025 23:24:40.433] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Wooden was corrected from null to its default, 302. 
+[12giu2025 23:24:40.433] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Stone was corrected from null to its default, 650. 
+[12giu2025 23:24:40.434] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Iron was corrected from null to its default, 1300. 
+[12giu2025 23:24:40.434] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Gold was corrected from null to its default, 750. 
+[12giu2025 23:24:40.434] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Lapis was corrected from null to its default, 1100. 
+[12giu2025 23:24:40.434] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Redstone was corrected from null to its default, 1100. 
+[12giu2025 23:24:40.434] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Obsidian was corrected from null to its default, 11200. 
+[12giu2025 23:24:40.434] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Diamond was corrected from null to its default, 8025. 
+[12giu2025 23:24:40.434] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Emerald was corrected from null to its default, 9768. 
+[12giu2025 23:24:40.435] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Durability Settings.Netherite was corrected from null to its default, 13675. 
+[12giu2025 23:24:40.437] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings was corrected from null to its default, SynchronizedConfig{DataHolder:{}}. 
+[12giu2025 23:24:40.438] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Wooden was corrected from null to its default, 1. 
+[12giu2025 23:24:40.438] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Stone was corrected from null to its default, 1. 
+[12giu2025 23:24:40.438] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Iron was corrected from null to its default, 1. 
+[12giu2025 23:24:40.438] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Gold was corrected from null to its default, 1. 
+[12giu2025 23:24:40.438] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Lapis was corrected from null to its default, 1. 
+[12giu2025 23:24:40.438] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Redstone was corrected from null to its default, 1. 
+[12giu2025 23:24:40.438] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Obsidian was corrected from null to its default, 1. 
+[12giu2025 23:24:40.439] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Diamond was corrected from null to its default, 1. 
+[12giu2025 23:24:40.439] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Emerald was corrected from null to its default, 1. 
+[12giu2025 23:24:40.439] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Radius Settings.Netherite was corrected from null to its default, 1. 
+[12giu2025 23:24:40.441] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityLapisHammer was corrected from 1100 to its default, null. 
+[12giu2025 23:24:40.442] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityRedstoneHammer was corrected from 1100 to its default, null. 
+[12giu2025 23:24:40.444] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityDiamondHammer was corrected from 8025 to its default, null. 
+[12giu2025 23:24:40.444] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityGoldHammer was corrected from 750 to its default, null. 
+[12giu2025 23:24:40.445] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityObsidianHammer was corrected from 11200 to its default, null. 
+[12giu2025 23:24:40.447] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityNetheriteHammer was corrected from 13675 to its default, null. 
+[12giu2025 23:24:40.448] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityWoodenHammer was corrected from 302 to its default, null. 
+[12giu2025 23:24:40.449] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityIronHammer was corrected from 1300 to its default, null. 
+[12giu2025 23:24:40.450] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityStoneHammer was corrected from 650 to its default, null. 
+[12giu2025 23:24:40.452] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key DurabilityEmeraldHammer was corrected from 9768 to its default, null. 
+[12giu2025 23:24:40.466] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[12giu2025 23:24:40.668] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[12giu2025 23:24:40.678] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 7.618 ms
+[12giu2025 23:24:41.001] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [onlyhammers]
+[12giu2025 23:24:41.061] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_official_1.21/forge-1.21-51.0.33_mapped_official_1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[12giu2025 23:24:41.062] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_official_1.21/forge-1.21-51.0.33_mapped_official_1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[12giu2025 23:24:41.185] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: onlyhammers
+[12giu2025 23:24:41.207] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: onlyhammers finished after 21 ms
+[12giu2025 23:24:41.207] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id onlyhammers
+[12giu2025 23:24:41.314] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id onlyhammers finished after 107 ms
+[12giu2025 23:24:41.314] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id onlyhammers
+[12giu2025 23:24:41.322] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id onlyhammers finished after 7 ms
+[12giu2025 23:24:41.322] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[12giu2025 23:24:41.368] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 45 ms
+[12giu2025 23:24:41.368] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 184 ms
+[12giu2025 23:24:41.372] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 44, old count: 44, new count: 45, removed stale: 0, written: 0
