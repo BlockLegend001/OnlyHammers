@@ -1,0 +1,17 @@
+package com.blocklegend001.onlyhammers;
+
+import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
+import net.fabricmc.api.ClientModInitializer;
+
+public class OnlyHammersClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+        HammerOverlayRenderer.init();
+        AttackBlockCallback.EVENT.register((player, world, hand, pos, direction) -> {
+            if (world.isClient) {
+                ExcavatorUsageEvent.isSneaking = player.isSneaking();
+            }
+            return ActionResult.PASS;
+        });
+    }
+}

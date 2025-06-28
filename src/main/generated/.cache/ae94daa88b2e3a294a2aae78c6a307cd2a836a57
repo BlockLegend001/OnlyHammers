@@ -1,4 +1,4 @@
-// 1.21	2025-05-07T17:45:37.764398	OnlyHammers/Recipes
+// 1.21	2025-05-12T00:08:34.9517758	OnlyHammers/Recipes
 adcbc2f8bb0ca8293f539165194aebed39bcfbbd data\onlyhammers\advancement\recipes\tools\netherite_hammer.json
 88bb237e1bfd137822c95a81c740b327ae4fa352 data\onlyhammers\recipe\wooden_hammer.json
 010b5c94a633b272ce6439d01f3d615b40c4289a data\onlyhammers\advancement\recipes\tools\stone_hammer.json
@@ -16,6 +16,6 @@ d02c6275ae7bb8cb4af0b6d332eb64567268495c data\onlyhammers\advancement\recipes\to
 7ebc14bd32dac1ab50e21d84f1416aefe4d54973 data\onlyhammers\recipe\netherite_hammer.json
 8f80927eb8c924ce9fef6551bee3ee4fe08a147e data\onlyhammers\recipe\gold_hammer.json
 6adb91304cd9f9b612cf76b2e8a79a461a886809 data\onlyhammers\advancement\recipes\tools\redstone_hammer.json
-63d0402d0d9ce099ea492c8700f8c77e67ddabf8 data\onlyhammers\recipe\stone_hammer.json
+bf40d213876b8ebc84128887be6880d6f9656638 data\onlyhammers\recipe\stone_hammer.json
 e044d438b7fabbda1c9c60ed2cef69fb5f98f655 data\onlyhammers\advancement\recipes\tools\obsidian_hammer.json
 7b884d003e5b6a105b8f3aab69355d6c767b8fcf data\onlyhammers\recipe\diamond_hammer.json
