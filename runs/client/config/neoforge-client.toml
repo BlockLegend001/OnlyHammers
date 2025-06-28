@@ -1,5 +1,3 @@
-#EXPERIMENTAL: Enable the NeoForge block rendering pipeline - fixes the lighting of custom models.
-experimentalForgeLightPipelineEnabled = false
 #When enabled, NeoForge will show any warnings that occurred during loading.
 showLoadWarnings = true
 #A config option mainly for developers. Logs out configuration values that do not have translations when running a client in a development environment.
@@ -8,3 +6,5 @@ logUntranslatedConfigurationWarnings = true
 reducedDepthStencilFormat = false
 #When enabled, AO will be handled per BlockModelPart instead of using the first part's AO setting
 handleAmbientOcclusionPerPart = true
+#Enable the enhanced block model lighting pipeline - fixes the lighting of custom models, as well as many vanilla bugs.
+enhancedLighting = true
