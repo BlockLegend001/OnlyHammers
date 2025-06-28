@@ -1,0 +1,63 @@
+["Radius Settings"]
+	#Hammering radius for Gold Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Gold = 1
+	#Hammering radius for Redstone Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Redstone = 1
+	#Hammering radius for Netherite Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Netherite = 1
+	#Hammering radius for Wooden Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Wooden = 1
+	#Hammering radius for Emerald Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Emerald = 1
+	#Hammering radius for Obsidian Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Obsidian = 1
+	#Hammering radius for Lapis Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Lapis = 1
+	#Hammering radius for Iron Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Iron = 1
+	#Hammering radius for Diamond Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Diamond = 1
+	#Hammering radius for Stone Hammer (radius 1 = 3×1 area)
+	#Range: > 0
+	Stone = 1
+
+["Durability Settings"]
+	#Durability of the gold hammer.
+	#Range: > 0
+	Gold = 750
+	#Durability of the redstone hammer.
+	#Range: > 0
+	Redstone = 1100
+	#Durability of the netherite hammer.
+	#Range: > 0
+	Netherite = 13675
+	#Durability of the wooden hammer.
+	#Range: > 0
+	Wooden = 302
+	#Durability of the emerald hammer.
+	#Range: > 0
+	Emerald = 9768
+	#Durability of the obsidian hammer.
+	#Range: > 0
+	Obsidian = 11200
+	#Durability of the lapis hammer.
+	#Range: > 0
+	Lapis = 1100
+	#Durability of the iron hammer.
+	#Range: > 0
+	Iron = 1300
+	#Durability of the diamond hammer.
+	#Range: > 0
+	Diamond = 8025
+	#Durability of the stone hammer.
+	#Range: > 0
+	Stone = 650
