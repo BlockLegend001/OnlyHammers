@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -31,6 +32,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         tag(ModTags.Items.EMERALD_HAMMERS).add(ModItems.EMERALD_HAMMER.get());
         tag(ModTags.Items.OBSIDIAN_HAMMERS).add(ModItems.OBSIDIAN_HAMMER.get());
         tag(ModTags.Items.NETHERITE_HAMMERS).add(ModItems.NETHERITE_HAMMER.get());
+
+        tag(ModTags.Items.LAPIS_HAMMERS_REAPIRS).add(Items.LAPIS_LAZULI);
+        tag(ModTags.Items.REDSTONE_HAMMERS_REAPIRS).add(Items.REDSTONE);
+        tag(ModTags.Items.EMERALD_HAMMERS_REAPIRS).add(Items.EMERALD);
+        tag(ModTags.Items.OBSIDIAN_HAMMERS_REAPIRS).add(Items.OBSIDIAN);
 
         tag(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.WOODEN_HAMMER.get())
                 .add(ModItems.STONE_HAMMER.get())
