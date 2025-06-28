@@ -1,0 +1,1 @@
+- Fixed datagen not runned correctly (textures and more were not generated)
