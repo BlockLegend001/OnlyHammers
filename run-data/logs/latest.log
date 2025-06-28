@@ -1,48 +1,292 @@
-[17set2024 21:31:04.650] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\main\resources]
-[17set2024 21:31:04.656] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.4+7-LTS
-[17set2024 21:31:04.658] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.4 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
-[17set2024 21:31:04.841] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[17set2024 21:31:04.983] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/rosar/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[17set2024 21:31:06.613] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[17set2024 21:31:07.957] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\main\resources]
-[17set2024 21:31:31.693] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 52.0.16, for MC 1.21.1 with MCP 20240808.132146
-[17set2024 21:31:31.693] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v52.0.16 Initialized
-[17set2024 21:31:31.814] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[17set2024 21:31:32.149] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CenterSearch' is not a valid config key for config category 'advanced'.
-Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+[12mag2025 11:23:54.862] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\main\resources, --mixin.config, onlyhammers.mixins.json]
+[12mag2025 11:23:54.869] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.6+7-LTS
+[12mag2025 11:23:54.869] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.6 by Amazon.com Inc.; OS Windows 11 arch amd64 version 10.0
+[12mag2025 11:23:54.951] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[12mag2025 11:23:55.046] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/rosar/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[12mag2025 11:23:55.788] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[12mag2025 11:23:56.611] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\rosar\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, onlyhammers, --all, --output, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\generated\resources, --existing, D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\src\main\resources]
+[12mag2025 11:23:56.632] [main/WARN] [mixin/]: Reference map 'onlyexcavators.refmap.json' for onlyhammers.mixins.json could not be read. If this is a development environment you can ignore this message
+[12mag2025 11:23:56.695] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[12mag2025 11:24:01.520] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 52.1.0, for MC 1.21.1 with MCP 20240808.132146
+[12mag2025 11:24:01.520] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v52.1.0 Initialized
+[12mag2025 11:24:01.577] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[12mag2025 11:24:01.714] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'DebugMode' is not a valid config key for config category 'debug'.
+Valid keys: [debugMode, debugGuis, debugInputs, debugInfoTooltipsEnabled, crashingTestItemsEnabled, logSuffixTreeStats]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-debug.ini
+Line #5: "	DebugMode = false"
+[12mag2025 11:24:01.714] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'DebugGuis' is not a valid config key for config category 'debug'.
+Valid keys: [debugMode, debugGuis, debugInputs, debugInfoTooltipsEnabled, crashingTestItemsEnabled, logSuffixTreeStats]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-debug.ini
+Line #10: "	DebugGuis = false"
+[12mag2025 11:24:01.714] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'DebugInputs' is not a valid config key for config category 'debug'.
+Valid keys: [debugMode, debugGuis, debugInputs, debugInfoTooltipsEnabled, crashingTestItemsEnabled, logSuffixTreeStats]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-debug.ini
+Line #15: "	DebugInputs = false"
+[12mag2025 11:24:01.715] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CrashingTestItemsEnabled' is not a valid config key for config category 'debug'.
+Valid keys: [debugMode, debugGuis, debugInputs, debugInfoTooltipsEnabled, crashingTestItemsEnabled, logSuffixTreeStats]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-debug.ini
+Line #25: "	CrashingTestItemsEnabled = false"
+[12mag2025 11:24:01.720] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: '[modname]' is not a valid category name.
+Valid names are: [modName]
+Skipping all values until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-mod-id-format.ini
+Line #1: "[modname]"
+[12mag2025 11:24:01.720] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-mod-id-format.ini
+Line #9: "	ModNameFormat = blue italic"
+[12mag2025 11:24:01.724] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'SearchColors' is not a valid config key for config category 'colors'.
+Valid keys: [searchColors]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-colors.ini
+Line #6: "	SearchColors = White:EEEEEE, LightBlue:7492CC, Cyan:00EEEE, Blue:2222DD, LapisBlue:25418B, Teal:008080, Yellow:CACB58, GoldenYellow:EED700, Orange:D97634, Pink:D1899D, HotPink:FC0FC0, Magenta:B24BBB, Purple:813EB9, EvilPurple:2E1649, Lavender:B57EDC, Indigo:480082, Sand:DBD3A0, Tan:BB9B63, LightBrown:A0522D, Brown:634B33, DarkBrown:3A2D13, LimeGreen:43B239, SlimeGreen:83CB73, Green:008000, DarkGreen:224D22, GrassGreen:548049, Red:963430, BrickRed:B0604B, NetherBrick:2A1516, Redstone:CE3E36, Black:181515, CharcoalGray:464646, IronGray:646464, Gray:808080, Silver:C0C0C0"
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CenterSearch' is not a valid config key for config category 'appearance'.
+Valid keys: [centerSearch, recipeGuiHeight]
 Skipping this key.
 Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
 Line #5: "	CenterSearch = false"
-[17set2024 21:31:32.149] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CheatToHotbarUsingHotkeysEnabled' is not a valid config key for config category 'advanced'.
-Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'RecipeGuiHeight' is not a valid config key for config category 'appearance'.
+Valid keys: [centerSearch, recipeGuiHeight]
 Skipping this key.
 Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
-Line #20: "	CheatToHotbarUsingHotkeysEnabled = false"
-[17set2024 21:31:32.149] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'AddBookmarksToFrontEnabled' is not a valid config key for config category 'advanced'.
-Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Line #10: "	RecipeGuiHeight = 350"
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: '[cheat_mode]' is not a valid category name.
+Valid names are: [appearance, cheating, bookmarks, tooltips, performance, lookups, advanced, input, sorting, search, ingredientList, bookmarkList]
+Skipping all values until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #13: "[cheat_mode]"
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #17: "	GiveMode = MOUSE_PICKUP"
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #22: "	CheatToHotbarUsingHotkeysEnabled = false"
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #27: "	ShowHiddenItems = false"
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'AddBookmarksToFrontEnabled' is not a valid config key for config category 'bookmarks'.
+Valid keys: [addBookmarksToFrontEnabled, dragToRearrangeBookmarksEnabled]
 Skipping this key.
 Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
-Line #25: "	AddBookmarksToFrontEnabled = true"
-[17set2024 21:31:32.151] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'GiveMode' is not a valid config key for config category 'advanced'.
-Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Line #34: "	AddBookmarksToFrontEnabled = false"
+[12mag2025 11:24:01.743] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'BookmarkTooltipFeatures' is not a valid config key for config category 'bookmarks'.
+Valid keys: [addBookmarksToFrontEnabled, dragToRearrangeBookmarksEnabled]
 Skipping this key.
 Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
-Line #40: "	GiveMode = MOUSE_PICKUP"
-[17set2024 21:31:32.151] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'RecipeGuiHeight' is not a valid config key for config category 'advanced'.
-Valid keys: [LowMemorySlowSearchEnabled, CatchRenderErrorsEnabled, lookupFluidContentsEnabled, lookupBlockTagsEnabled, showTagRecipesEnabled, showCreativeTabNamesEnabled]
+Line #40: "	BookmarkTooltipFeatures = PREVIEW"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'HoldShiftToShowBookmarkTooltipFeatures' is not a valid config key for config category 'bookmarks'.
+Valid keys: [addBookmarksToFrontEnabled, dragToRearrangeBookmarksEnabled]
 Skipping this key.
 Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
-Line #45: "	RecipeGuiHeight = 350"
-[17set2024 21:31:32.159] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[17set2024 21:31:32.170] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 8.708 ms
-[17set2024 21:31:33.438] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [onlyhammers]
-[17set2024 21:31:33.509] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.16_mapped_official_1.21.1/forge-1.21.1-52.0.16_mapped_official_1.21.1.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[17set2024 21:31:33.511] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.0.16_mapped_official_1.21.1/forge-1.21.1-52.0.16_mapped_official_1.21.1.jar%230!/data/.mcassetsroot' uses unexpected schema
-[17set2024 21:31:33.776] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: onlyhammers
-[17set2024 21:31:33.819] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: onlyhammers finished after 41 ms
-[17set2024 21:31:33.820] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id onlyhammers
-[17set2024 21:31:34.124] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id onlyhammers finished after 303 ms
-[17set2024 21:31:34.124] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id onlyhammers
-[17set2024 21:31:34.158] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id onlyhammers finished after 33 ms
-[17set2024 21:31:34.158] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 381 ms
-[17set2024 21:31:34.176] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 24, old count: 24, new count: 25, removed stale: 0, written: 0
+Line #45: "	HoldShiftToShowBookmarkTooltipFeatures = true"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'DragToRearrangeBookmarksEnabled' is not a valid config key for config category 'bookmarks'.
+Valid keys: [addBookmarksToFrontEnabled, dragToRearrangeBookmarksEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #50: "	DragToRearrangeBookmarksEnabled = true"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'LowMemorySlowSearchEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [catchRenderErrorsEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #57: "	LowMemorySlowSearchEnabled = false"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CatchRenderErrorsEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [catchRenderErrorsEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #62: "	CatchRenderErrorsEnabled = false"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'lookupFluidContentsEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [catchRenderErrorsEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #67: "	lookupFluidContentsEnabled = false"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'lookupBlockTagsEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [catchRenderErrorsEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #72: "	lookupBlockTagsEnabled = true"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'showTagRecipesEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [catchRenderErrorsEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #77: "	showTagRecipesEnabled = true"
+[12mag2025 11:24:01.744] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'showCreativeTabNamesEnabled' is not a valid config key for config category 'advanced'.
+Valid keys: [catchRenderErrorsEnabled]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #82: "	showCreativeTabNamesEnabled = false"
+[12mag2025 11:24:01.745] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'IngredientSortStages' is not a valid config key for config category 'sorting'.
+Valid keys: [ingredientSortStages, recipeSorterStages]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #102: "	IngredientSortStages = MOD_NAME, INGREDIENT_TYPE, CREATIVE_MENU"
+[12mag2025 11:24:01.745] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'RecipeSorterStages' is not a valid config key for config category 'sorting'.
+Valid keys: [ingredientSortStages, recipeSorterStages]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #108: "	RecipeSorterStages = BOOKMARKED, CRAFTABLE"
+[12mag2025 11:24:01.745] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: '[tags]' is not a valid category name.
+Valid names are: [appearance, cheating, bookmarks, tooltips, performance, lookups, advanced, input, sorting, search, ingredientList, bookmarkList]
+Skipping all values until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #111: "[tags]"
+[12mag2025 11:24:01.745] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #115: "	TagContentTooltipEnabled = true"
+[12mag2025 11:24:01.745] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #120: "	HideSingleIngredientTagsEnabled = true"
+[12mag2025 11:24:01.746] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'ModNameSearchMode' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #127: "	ModNameSearchMode = REQUIRE_PREFIX"
+[12mag2025 11:24:01.746] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'TooltipSearchMode' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #132: "	TooltipSearchMode = ENABLED"
+[12mag2025 11:24:01.746] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'TagSearchMode' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #137: "	TagSearchMode = REQUIRE_PREFIX"
+[12mag2025 11:24:01.746] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'ColorSearchMode' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #142: "	ColorSearchMode = DISABLED"
+[12mag2025 11:24:01.746] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'ResourceLocationSearchMode' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #147: "	ResourceLocationSearchMode = DISABLED"
+[12mag2025 11:24:01.747] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'CreativeTabSearchMode' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #152: "	CreativeTabSearchMode = DISABLED"
+[12mag2025 11:24:01.747] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'SearchAdvancedTooltips' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #157: "	SearchAdvancedTooltips = false"
+[12mag2025 11:24:01.747] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'SearchModIds' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #162: "	SearchModIds = true"
+[12mag2025 11:24:01.747] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'SearchModAliases' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #167: "	SearchModAliases = true"
+[12mag2025 11:24:01.747] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'SearchShortModNames' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #172: "	SearchShortModNames = true"
+[12mag2025 11:24:01.747] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: 'SearchIngredientAliases' is not a valid config key for config category 'search'.
+Valid keys: [modNameSearchMode, tagSearchMode, tooltipSearchMode, colorSearchMode, resourceLocationSearchMode, creativeTabSearchMode, searchAdvancedTooltips, searchModIds, searchModAliases, searchShortModNames, searchIngredientAliases]
+Skipping this key.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #177: "	SearchIngredientAliases = true"
+[12mag2025 11:24:01.748] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: '[IngredientList]' is not a valid category name.
+Valid names are: [appearance, cheating, bookmarks, tooltips, performance, lookups, advanced, input, sorting, search, ingredientList, bookmarkList]
+Skipping all values until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #180: "[IngredientList]"
+[12mag2025 11:24:01.748] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #184: "	MaxRows = 16"
+[12mag2025 11:24:01.748] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #189: "	MaxColumns = 9"
+[12mag2025 11:24:01.748] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #194: "	HorizontalAlignment = RIGHT"
+[12mag2025 11:24:01.748] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #199: "	VerticalAlignment = TOP"
+[12mag2025 11:24:01.748] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #204: "	ButtonNavigationVisibility = ENABLED"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #209: "	DrawBackground = false"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: '[BookmarkList]' is not a valid category name.
+Valid names are: [appearance, cheating, bookmarks, tooltips, performance, lookups, advanced, input, sorting, search, ingredientList, bookmarkList]
+Skipping all values until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #212: "[BookmarkList]"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #216: "	MaxRows = 16"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #221: "	MaxColumns = 9"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #226: "	HorizontalAlignment = LEFT"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #231: "	VerticalAlignment = TOP"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #236: "	ButtonNavigationVisibility = ENABLED"
+[12mag2025 11:24:01.749] [modloading-worker-0/ERROR] [mezz.jei.common.config.file.ConfigSerializer/]: Expected a '[category]' here.
+Configs must start with a category before defining values.
+Skipping all lines until the first valid category is declared.
+Config file: D:\Programmazione\Mod\Only Hammers\FORGE\1.21.1\run-data\config\jei\jei-client.ini
+Line #241: "	DrawBackground = false"
+[12mag2025 11:24:01.753] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[12mag2025 11:24:01.756] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 1.881 ms
+[12mag2025 11:24:01.861] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [onlyhammers]
+[12mag2025 11:24:01.934] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.1.0_mapped_official_1.21.1/forge-1.21.1-52.1.0_mapped_official_1.21.1.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[12mag2025 11:24:01.935] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/rosar/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.1.0_mapped_official_1.21.1/forge-1.21.1-52.1.0_mapped_official_1.21.1.jar%230!/data/.mcassetsroot' uses unexpected schema
+[12mag2025 11:24:02.067] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: onlyhammers
+[12mag2025 11:24:02.096] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: onlyhammers finished after 28 ms
+[12mag2025 11:24:02.097] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id onlyhammers
+[12mag2025 11:24:02.228] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id onlyhammers finished after 129 ms
+[12mag2025 11:24:02.228] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id onlyhammers
+[12mag2025 11:24:02.244] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id onlyhammers finished after 16 ms
+[12mag2025 11:24:02.244] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[12mag2025 11:24:02.295] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 51 ms
+[12mag2025 11:24:02.296] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 229 ms
+[12mag2025 11:24:02.307] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 44, old count: 44, new count: 45, removed stale: 0, written: 2
