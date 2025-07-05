@@ -1,0 +1,14 @@
+{
+  "item.onlyhammers.wooden_hammer": "Martillo de madera",
+  "item.onlyhammers.stone_hammer": "Martillo de piedra",
+  "item.onlyhammers.iron_hammer": "Martillo de hierro",
+  "item.onlyhammers.gold_hammer": "Martillo de oro",
+  "item.onlyhammers.lapis_hammer": "Martillo de lapislázuli",
+  "item.onlyhammers.redstone_hammer": "Martillo de redstone",
+  "item.onlyhammers.diamond_hammer": "Martillo de diamante",
+  "item.onlyhammers.emerald_hammer": "Martillo de esmeralda",
+  "item.onlyhammers.obsidian_hammer": "Martillo de obsidiana",
+  "item.onlyhammers.netherite_hammer": "Martillo de netherite",
+
+  "creativemodetab.onlyhammers": "Solo Martillos y Excavadoras"
+}
