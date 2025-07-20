@@ -19,17 +19,18 @@ import static com.blocklegend001.onlyhammers.utils.RadiusMap.HAMMER_RADIUS_MAP;
 
 public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
-    public static boolean isSneaking = false;
 
     @Override
     public boolean beforeBlockBreak(World world, PlayerEntity player, BlockPos pos,
                                     BlockState state, @Nullable BlockEntity blockEntity) {
-        if (!(player instanceof ServerPlayerEntity serverPlayer)) return true;
 
+        if (!(player instanceof ServerPlayerEntity serverPlayer)) return true;
         ItemStack mainHandItem = player.getMainHandStack();
         if (!(mainHandItem.getItem() instanceof Hammer excavator)) return true;
 
         if (HARVESTED_BLOCKS.contains(pos)) return true;
+
+        boolean isSneaking = player.isSneaking();
 
         HARVESTED_BLOCKS.add(pos);
 
