@@ -25,18 +25,18 @@ public class ModEvents {
         ItemStack mainHandItem = player.getMainHandItem();
 
         if (!(player instanceof ServerPlayer serverPlayer)) return true;
-
         if (!(mainHandItem.getItem() instanceof Hammer excavator)) return true;
-
         if (HARVESTED_BLOCKS.contains(event.getPos())) return true;
+
+        boolean isSneaking = player.isCrouching() || player.isShiftKeyDown();
 
         HARVESTED_BLOCKS.add(event.getPos());
 
         try {
             int radius = isSneaking ? 0 : RadiusMap.getHammerRadius().get(mainHandItem.getItem());
+
             for (BlockPos targetPos : Hammer.getBlocksToBeDestroyed(radius, event.getPos(), serverPlayer)) {
                 if (targetPos.equals(event.getPos())) continue;
-
                 if (HARVESTED_BLOCKS.contains(targetPos)) continue;
                 if (!excavator.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(targetPos))) continue;
 
@@ -47,7 +47,6 @@ public class ModEvents {
         } finally {
             HARVESTED_BLOCKS.remove(event.getPos());
         }
-
         return true;
     }
 }
