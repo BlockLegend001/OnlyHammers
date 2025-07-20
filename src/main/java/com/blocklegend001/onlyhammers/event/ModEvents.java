@@ -17,7 +17,6 @@ import java.util.Set;
 @Mod.EventBusSubscriber(modid = OnlyHammers.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModEvents {
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
-    public static boolean isSneaking = false;
 
     @SubscribeEvent
     public static boolean onExcavatorUsage(BlockEvent.BreakEvent event) {
