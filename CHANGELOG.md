@@ -1,1 +1,1 @@
-- Improve tooltip by showing hammering area dimensions instead of radius
+- Fixed a bug that not let the player break one block when shifting in multiplayer
