@@ -4,6 +4,7 @@ import com.blocklegend001.onlyhammers.item.ModItems;
 import com.blocklegend001.onlyhammers.utils.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -51,6 +52,50 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NETHERITE_HAMMER);
 
         valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ModItems.WOODEN_HAMMER)
+                .add(ModItems.STONE_HAMMER)
+                .add(ModItems.IRON_HAMMER)
+                .add(ModItems.GOLD_HAMMER)
+                .add(ModItems.LAPIS_HAMMER)
+                .add(ModItems.REDSTONE_HAMMER)
+                .add(ModItems.OBSIDIAN_HAMMER)
+                .add(ModItems.DIAMOND_HAMMER)
+                .add(ModItems.EMERALD_HAMMER)
+                .add(ModItems.NETHERITE_HAMMER);
+
+        valueLookupBuilder(ItemTags.PICKAXES).add(ModItems.WOODEN_HAMMER)
+                .add(ModItems.STONE_HAMMER)
+                .add(ModItems.IRON_HAMMER)
+                .add(ModItems.GOLD_HAMMER)
+                .add(ModItems.LAPIS_HAMMER)
+                .add(ModItems.REDSTONE_HAMMER)
+                .add(ModItems.OBSIDIAN_HAMMER)
+                .add(ModItems.DIAMOND_HAMMER)
+                .add(ModItems.EMERALD_HAMMER)
+                .add(ModItems.NETHERITE_HAMMER);
+
+        valueLookupBuilder(ItemTags.BREAKS_DECORATED_POTS).add(ModItems.WOODEN_HAMMER)
+                .add(ModItems.STONE_HAMMER)
+                .add(ModItems.IRON_HAMMER)
+                .add(ModItems.GOLD_HAMMER)
+                .add(ModItems.LAPIS_HAMMER)
+                .add(ModItems.REDSTONE_HAMMER)
+                .add(ModItems.OBSIDIAN_HAMMER)
+                .add(ModItems.DIAMOND_HAMMER)
+                .add(ModItems.EMERALD_HAMMER)
+                .add(ModItems.NETHERITE_HAMMER);
+
+        valueLookupBuilder(ConventionalItemTags.TOOLS).add(ModItems.WOODEN_HAMMER)
+                .add(ModItems.STONE_HAMMER)
+                .add(ModItems.IRON_HAMMER)
+                .add(ModItems.GOLD_HAMMER)
+                .add(ModItems.LAPIS_HAMMER)
+                .add(ModItems.REDSTONE_HAMMER)
+                .add(ModItems.OBSIDIAN_HAMMER)
+                .add(ModItems.DIAMOND_HAMMER)
+                .add(ModItems.EMERALD_HAMMER)
+                .add(ModItems.NETHERITE_HAMMER);
+
+        valueLookupBuilder(ConventionalItemTags.MINING_TOOL_TOOLS).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
