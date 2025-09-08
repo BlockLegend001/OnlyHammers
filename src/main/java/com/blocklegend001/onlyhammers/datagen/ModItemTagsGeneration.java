@@ -83,6 +83,17 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.EMERALD_HAMMER)
                 .add(ModItems.NETHERITE_HAMMER);
 
+        getOrCreateTagBuilder(ItemTags.CLUSTER_MAX_HARVESTABLES).add(ModItems.WOODEN_HAMMER)
+                .add(ModItems.STONE_HAMMER)
+                .add(ModItems.IRON_HAMMER)
+                .add(ModItems.GOLD_HAMMER)
+                .add(ModItems.LAPIS_HAMMER)
+                .add(ModItems.REDSTONE_HAMMER)
+                .add(ModItems.OBSIDIAN_HAMMER)
+                .add(ModItems.DIAMOND_HAMMER)
+                .add(ModItems.EMERALD_HAMMER)
+                .add(ModItems.NETHERITE_HAMMER);
+
         getOrCreateTagBuilder(ConventionalItemTags.TOOLS).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
                 .add(ModItems.IRON_HAMMER)
