@@ -8,6 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -75,6 +76,60 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.EMERALD_HAMMER.get())
                 .add(ModItems.OBSIDIAN_HAMMER.get())
                 .add(ModItems.NETHERITE_HAMMER.get());
+
+        tag(ItemTags.PICKAXES).add(ModItems.WOODEN_HAMMER.get())
+                .add(ModItems.STONE_HAMMER.get())
+                .add(ModItems.IRON_HAMMER.get())
+                .add(ModItems.GOLD_HAMMER.get())
+                .add(ModItems.REDSTONE_HAMMER.get())
+                .add(ModItems.LAPIS_HAMMER.get())
+                .add(ModItems.DIAMOND_HAMMER.get())
+                .add(ModItems.EMERALD_HAMMER.get())
+                .add(ModItems.OBSIDIAN_HAMMER.get())
+                .add(ModItems.NETHERITE_HAMMER.get());
+
+        tag(ItemTags.CLUSTER_MAX_HARVESTABLES).add(ModItems.WOODEN_HAMMER.get())
+                .add(ModItems.STONE_HAMMER.get())
+                .add(ModItems.IRON_HAMMER.get())
+                .add(ModItems.GOLD_HAMMER.get())
+                .add(ModItems.REDSTONE_HAMMER.get())
+                .add(ModItems.LAPIS_HAMMER.get())
+                .add(ModItems.DIAMOND_HAMMER.get())
+                .add(ModItems.EMERALD_HAMMER.get())
+                .add(ModItems.OBSIDIAN_HAMMER.get())
+                .add(ModItems.NETHERITE_HAMMER.get());
+
+        tag(ItemTags.BREAKS_DECORATED_POTS).add(ModItems.WOODEN_HAMMER.get())
+                .add(ModItems.STONE_HAMMER.get())
+                .add(ModItems.IRON_HAMMER.get())
+                .add(ModItems.GOLD_HAMMER.get())
+                .add(ModItems.REDSTONE_HAMMER.get())
+                .add(ModItems.LAPIS_HAMMER.get())
+                .add(ModItems.DIAMOND_HAMMER.get())
+                .add(ModItems.EMERALD_HAMMER.get())
+                .add(ModItems.OBSIDIAN_HAMMER.get())
+                .add(ModItems.NETHERITE_HAMMER.get());
+
+        tag(Tags.Items.TOOLS).add(ModItems.WOODEN_HAMMER.get())
+                .add(ModItems.STONE_HAMMER.get())
+                .add(ModItems.IRON_HAMMER.get())
+                .add(ModItems.GOLD_HAMMER.get())
+                .add(ModItems.REDSTONE_HAMMER.get())
+                .add(ModItems.LAPIS_HAMMER.get())
+                .add(ModItems.DIAMOND_HAMMER.get())
+                .add(ModItems.EMERALD_HAMMER.get())
+                .add(ModItems.OBSIDIAN_HAMMER.get())
+                .add(ModItems.NETHERITE_HAMMER.get());
+
+        tag(Tags.Items.MINING_TOOL_TOOLS).add(ModItems.WOODEN_HAMMER.get())
+                .add(ModItems.STONE_HAMMER.get())
+                .add(ModItems.IRON_HAMMER.get())
+                .add(ModItems.GOLD_HAMMER.get())
+                .add(ModItems.REDSTONE_HAMMER.get())
+                .add(ModItems.LAPIS_HAMMER.get())
+                .add(ModItems.DIAMOND_HAMMER.get())
+                .add(ModItems.EMERALD_HAMMER.get())
+                .add(ModItems.OBSIDIAN_HAMMER.get())
+                .add(ModItems.NETHERITE_HAMMER.get());
     }
 }
-
