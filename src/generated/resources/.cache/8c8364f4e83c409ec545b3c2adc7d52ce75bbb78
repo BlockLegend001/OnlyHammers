@@ -1,8 +1,13 @@
-// 1.21.6	2025-06-28T23:23:27.0081933	Tags for minecraft:item mod id vanilla
+// 1.21.6	2025-09-08T23:43:33.9906108	Tags for minecraft:item mod id vanilla
+62afb5a6111ad4f5e1077767bc34318860628708 data/c/tags/item/tools.json
+62afb5a6111ad4f5e1077767bc34318860628708 data/c/tags/item/tools/mining_tool.json
+62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/breaks_decorated_pots.json
+62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/cluster_max_harvestables.json
 62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/durability.json
 62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/mining.json
 62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/mining_loot.json
 62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/enchantable/vanishing.json
+62afb5a6111ad4f5e1077767bc34318860628708 data/minecraft/tags/item/pickaxes.json
 834d8bc039229cb4808b12451f450aa8446e4511 data/onlyhammers/tags/item/diamond_hammers.json
 05cfb51d08249f08a2d8df794ebb3acf8ef663b0 data/onlyhammers/tags/item/emerald_hammers.json
 8c4f379d97e2cd8c7f9297bf4fab7e60083ecb0d data/onlyhammers/tags/item/emerald_hammers_reapirs.json
