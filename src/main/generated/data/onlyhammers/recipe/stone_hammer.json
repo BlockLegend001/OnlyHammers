@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "minecraft:stone",
+    "C": "minecraft:cobblestone",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "BCB",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "onlyhammers:stone_hammer"
+  }
+}
