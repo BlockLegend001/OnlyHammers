@@ -6,7 +6,7 @@ import net.minecraft.item.ToolMaterial;
 
 public class ObsidianHammer extends Hammer {
     public ObsidianHammer(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
-        super(material, attackDamage, attackSpeed, settings.maxDamage(11200));
+        super(material, attackDamage, attackSpeed, settings);
     }
 
     @Override

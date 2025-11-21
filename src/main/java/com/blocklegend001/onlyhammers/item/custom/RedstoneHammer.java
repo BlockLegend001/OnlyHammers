@@ -6,7 +6,7 @@ import net.minecraft.item.ToolMaterial;
 
 public class RedstoneHammer extends Hammer {
     public RedstoneHammer(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
-        super(material, attackDamage, attackSpeed, settings.maxDamage(1100));
+        super(material, attackDamage, attackSpeed, settings);
     }
 
     @Override

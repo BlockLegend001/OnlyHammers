@@ -1,0 +1,14 @@
+// 1.20.1	2025-11-21T20:38:32.7405729	OnlyHammers/Tags for minecraft:item
+90c3797185246aa1547345428ac928a1908fec00 data\onlyhammers\tags\items\obsidian_hammer.json
+9c7cda0794b08667ef3f793e91e356b8102964ae data\onlyhammers\tags\items\stone_hammer.json
+6f024b50f802dd8edae921e54eb23ab90b89d75c data\onlyhammers\tags\items\iron_hammer.json
+d673caf99082bc76faa54c0e647c4f64596dd574 data\onlyhammers\tags\items\netherite_hammer.json
+db378e7c43c190b8d7bb8f20ff2ce6474ccf62a8 data\onlyhammers\tags\items\wooden_hammer.json
+11393d201e2a1a29aef435fc50ecb2c4c0142455 data\onlyhammers\tags\items\emerald_hammer.json
+4348d63cf871dbb8375b1a0ef4092bc89a5b26c7 data\onlyhammers\tags\items\diamond_hammer.json
+1c520d0f0c53d5bcaa283128c8bd4acb3d7d6282 data\onlyhammers\tags\items\redstone_hammer.json
+2c55b4bdff376fb20b82942e41d283d88afc90bf data\onlyhammers\tags\items\gold_hammer.json
+1ad09ad905f6981901fb0f4b88a1d418df187934 data\minecraft\tags\items\cluster_max_harvestables.json
+1ad09ad905f6981901fb0f4b88a1d418df187934 data\minecraft\tags\items\pickaxes.json
+1ad09ad905f6981901fb0f4b88a1d418df187934 data\minecraft\tags\items\breaks_decorated_pots.json
+8f71e7b6fa25e9f43409a9c1138d708a8e98971d data\onlyhammers\tags\items\lapis_hammer.json

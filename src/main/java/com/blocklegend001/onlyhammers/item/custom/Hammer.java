@@ -1,71 +1,86 @@
 package com.blocklegend001.onlyhammers.item.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.client.item.TooltipContext;
+import net.minecraft.item.*;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.server.world.ServerWorld;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Hammer extends PickaxeItem {
+import static com.blocklegend001.onlyhammers.utils.RadiusMap.HAMMER_RADIUS_MAP;
+
+public class Hammer extends MiningToolItem {
     public Hammer(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
-        super(material, attackDamage, attackSpeed, settings);
+        super(attackDamage, attackSpeed, material, BlockTags.PICKAXE_MINEABLE, settings);
     }
 
     @Override
-    public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        Vec3i offset = switch (((BlockHitResult) miner.raycast(4, 0, false)).getSide().getAxis()) {
-            case X -> new Vec3i(0, 1, 1);
-            case Y -> new Vec3i(1, 0, 1);
-            case Z -> new Vec3i(1, 1, 0);
-        };
-
-        if (!state.isToolRequired() && !(state.getHardness(world, pos) >= this.getMaterial().getMiningLevel())) {
-            return super.postMine(stack, world, state, pos, miner);
-        }
-
-        AtomicInteger blocksBroken = new AtomicInteger(1);
-        BlockPos.iterateOutwards(pos, offset.getX(), offset.getY(), offset.getZ()).forEach(e -> {
-            BlockState targetBlockState = world.getBlockState(e);
-            Block targetBlock = targetBlockState.getBlock();
-            int requiredToolLevel = (int) targetBlock.getHardness();
-            int hammerMiningLevel = this.getMaterial().getMiningLevel();
-            if (isSuitableFor(targetBlockState) && targetBlockState.isIn(BlockTags.PICKAXE_MINEABLE) && hammerMiningLevel >= requiredToolLevel) {
-                targetBlockState.getBlock().onBreak(world, e, targetBlockState, (PlayerEntity) miner);
-                boolean canHarvest = canHarvestBlock(targetBlockState, stack);
-                int silkTouchLevel = EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack);
-                int fortuneLevel = EnchantmentHelper.getLevel(Enchantments.FORTUNE, stack);
-                if (canHarvest && silkTouchLevel > 0) {
-                    Block.dropStack(world, e, new ItemStack(targetBlock));
-                } else {
-                    if (world instanceof ServerWorld) {
-                        targetBlockState.getBlock().afterBreak((ServerWorld) world, (PlayerEntity) miner, e, targetBlockState, null, stack);
-                    }
-                }
-                world.breakBlock(e, false, miner, Block.NOTIFY_ALL);
-                blocksBroken.getAndIncrement();
-            }
-        });
-
-        int durabilityCost = blocksBroken.get();
-        stack.damage(durabilityCost, miner, (entity) -> entity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
-        return true;
+    public int getEnchantability() {
+        return 30;
     }
 
-    private boolean canHarvestBlock(BlockState state, ItemStack stack) {
-        return state.isIn(BlockTags.PICKAXE_MINEABLE) && EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) > 0
-                || this.getMaterial().getMiningLevel() >= state.getBlock().getHardness();
+    public static List<BlockPos> getBlocksToBeDestroyed(int range, BlockPos initalBlockPos, ServerPlayerEntity player) {
+        List<BlockPos> positions = new ArrayList<>();
+        HitResult hit = player.raycast(20, 0, false);
+        if (hit.getType() == HitResult.Type.BLOCK) {
+            BlockHitResult blockHit = (BlockHitResult) hit;
+
+            if(blockHit.getSide() == Direction.DOWN || blockHit.getSide() == Direction.UP) {
+                for(int x = -range; x <= range; x++) {
+                    for(int y = -range; y <= range; y++) {
+                        positions.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY(), initalBlockPos.getZ() + y));
+                    }
+                }
+            }
+
+            if(blockHit.getSide() == Direction.NORTH || blockHit.getSide() == Direction.SOUTH) {
+                for(int x = -range; x <= range; x++) {
+                    for(int y = -range; y <= range; y++) {
+                        positions.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY() + y, initalBlockPos.getZ()));
+                    }
+                }
+            }
+
+            if(blockHit.getSide() == Direction.EAST || blockHit.getSide() == Direction.WEST) {
+                for(int x = -range; x <= range; x++) {
+                    for(int y = -range; y <= range; y++) {
+                        positions.add(new BlockPos(initalBlockPos.getX(), initalBlockPos.getY() + y, initalBlockPos.getZ() + x));
+                    }
+                }
+            }
+        }
+
+        return positions;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        int radius = getRadiusForExcavator(stack);
+        int width = radius * 2 + 1;
+
+        Text text = Text.literal("Dig area: ")
+                .formatted(Formatting.GRAY)
+                .append(Text.literal(width + "x1").formatted(Formatting.YELLOW));
+
+        tooltip.add(text);
+
+        super.appendTooltip(stack, world, tooltip, context);
+    }
+
+
+    private int getRadiusForExcavator(ItemStack stack) {
+        if (HAMMER_RADIUS_MAP.containsKey(stack.getItem())) {
+            return HAMMER_RADIUS_MAP.get(stack.getItem());
+        }
+        return 0;
     }
 }

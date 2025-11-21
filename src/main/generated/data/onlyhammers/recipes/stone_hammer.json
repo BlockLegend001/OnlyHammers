@@ -1,19 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "DsD",
-    " s ",
-    " s "
-  ],
+  "category": "equipment",
   "key": {
-    "D": {
+    "B": {
+      "item": "minecraft:stone"
+    },
+    "C": {
       "item": "minecraft:cobblestone"
     },
-    "s": {
+    "S": {
       "item": "minecraft:stick"
     }
   },
+  "pattern": [
+    "BCB",
+    " S ",
+    " S "
+  ],
   "result": {
     "item": "onlyhammers:stone_hammer"
-  }
+  },
+  "show_notification": true
 }

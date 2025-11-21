@@ -10,7 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static ItemGroup ONLYHAMMERS = Registry.register(Registries.ITEM_GROUP, new Identifier(OnlyHammers.MOD_ID, "onlyhammers"),
+    public static ItemGroup ONLYHAMMERS = Registry.register(Registries.ITEM_GROUP, Identifier.of(OnlyHammers.MOD_ID, "onlyhammers"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.onlyhammers.onlyhammers"))
                     .icon(() -> new ItemStack(ModItems.NETHERITE_HAMMER)).entries(((displayContext, entries) -> {
                         entries.add(ModItems.WOODEN_HAMMER);

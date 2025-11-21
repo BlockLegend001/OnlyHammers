@@ -1,22 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "DdD",
-    " s ",
-    " s "
-  ],
+  "category": "equipment",
   "key": {
-    "D": {
-      "item": "minecraft:gold_block"
-    },
-    "d": {
+    "B": {
       "item": "minecraft:gold_ingot"
     },
-    "s": {
+    "S": {
       "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "minecraft:gold_block"
     }
   },
+  "pattern": [
+    "bBb",
+    " S ",
+    " S "
+  ],
   "result": {
     "item": "onlyhammers:gold_hammer"
-  }
+  },
+  "show_notification": true
 }

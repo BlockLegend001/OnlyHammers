@@ -1,22 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "DdD",
-    " s ",
-    " s "
-  ],
+  "category": "equipment",
   "key": {
-    "D": {
-      "item": "minecraft:lapis_block"
-    },
-    "d": {
+    "B": {
       "item": "minecraft:lapis_lazuli"
     },
-    "s": {
+    "S": {
       "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "minecraft:lapis_block"
     }
   },
+  "pattern": [
+    "bBb",
+    " S ",
+    " S "
+  ],
   "result": {
     "item": "onlyhammers:lapis_hammer"
-  }
+  },
+  "show_notification": true
 }

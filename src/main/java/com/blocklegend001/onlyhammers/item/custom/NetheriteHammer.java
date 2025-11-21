@@ -6,7 +6,7 @@ import net.minecraft.item.ToolMaterial;
 
 public class NetheriteHammer extends Hammer {
     public NetheriteHammer(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
-        super(material, attackDamage, attackSpeed, settings.maxDamage(13675));
+        super(material, attackDamage, attackSpeed, settings);
     }
 
     @Override
