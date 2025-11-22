@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.blocklegend001.onlyhammers.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "onlyhammers.refmap.json",
+  "mixins": [
+    "LevelRendererMixin"
+  ],
+  "client": [
+    "LevelRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
