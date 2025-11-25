@@ -38,7 +38,7 @@ public class LevelRendererMixin {
         if (!(mc.hitResult instanceof BlockHitResult hit)) return;
 
         BlockPos origin = hit.getBlockPos();
-        if (!mc.level.getBlockState(origin).is(BlockTags.MINEABLE_WITH_SHOVEL)) return;
+        if (!mc.level.getBlockState(origin).is(BlockTags.MINEABLE_WITH_PICKAXE)) return;
 
         int range = mc.player.isShiftKeyDown() ? 0 : RadiusMap.getHammerRadius().get(held.getItem());
 

@@ -1,1 +1,1 @@
-- Fixed Java Version and other problems
+- Fixed one bug about the render
