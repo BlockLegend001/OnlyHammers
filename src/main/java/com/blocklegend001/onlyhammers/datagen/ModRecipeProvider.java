@@ -47,6 +47,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.STONE), conditionsFromItem(Items.COBBLESTONE))
                         .offerTo(exporter);
 
+                createShaped(RecipeCategory.TOOLS, ModItems.COPPER_HAMMER)
+                        .pattern("bBb")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('S', Items.STICK)
+                        .input('B', Items.COPPER_INGOT)
+                        .input('b', Blocks.COPPER_BLOCK)
+                        .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.TOOLS, ModItems.IRON_HAMMER)
                         .pattern("bBb")
                         .pattern(" S ")

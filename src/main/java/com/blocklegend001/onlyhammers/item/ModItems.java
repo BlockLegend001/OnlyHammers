@@ -1,7 +1,7 @@
 package com.blocklegend001.onlyhammers.item;
 
 import com.blocklegend001.onlyhammers.OnlyHammers;
-import com.blocklegend001.onlyhammers.item.custom.*;
+import com.blocklegend001.onlyhammers.item.custom.Hammer;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,6 +20,11 @@ public class ModItems {
             new Hammer(ModToolMaterials.STONE_HAMMER, 1, -3.3F,
                     new Item.Settings().maxCount(1)
                             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(OnlyHammers.MOD_ID, "stone_hammer")))));
+
+    public static final Item COPPER_HAMMER = registerItem("copper_hammer",
+            new Hammer(ModToolMaterials.COPPER_HAMMER, 1, -3.3F,
+                    new Item.Settings().maxCount(1)
+                            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(OnlyHammers.MOD_ID, "copper_hammer")))));
 
     public static final Item IRON_HAMMER = registerItem("iron_hammer",
             new Hammer(ModToolMaterials.IRON_HAMMER, 1, -3.3F,

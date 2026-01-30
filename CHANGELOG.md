@@ -1,0 +1,2 @@
+- Added Copper Hammer (1.21.9+)
+- **WARNING**: This update requires a regeneration of the config file.
