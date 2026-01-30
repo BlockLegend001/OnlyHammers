@@ -1,13 +1,14 @@
 // 1.21.9	-999999999-01-01T00:00:00	OnlyHammers/Tags for minecraft:item
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/c/tags/item/tools.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/c/tags/item/tools/mining_tool.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/minecraft/tags/item/breaks_decorated_pots.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/minecraft/tags/item/cluster_max_harvestables.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/minecraft/tags/item/enchantable/durability.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/minecraft/tags/item/enchantable/mining.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/minecraft/tags/item/enchantable/mining_loot.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/minecraft/tags/item/enchantable/vanishing.json
-e34af0b2bfbe7ab061208906da17be8c88174d4e data/minecraft/tags/item/pickaxes.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/c/tags/item/tools.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/c/tags/item/tools/mining_tool.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/minecraft/tags/item/breaks_decorated_pots.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/minecraft/tags/item/cluster_max_harvestables.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/minecraft/tags/item/enchantable/durability.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/minecraft/tags/item/enchantable/mining.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/minecraft/tags/item/enchantable/mining_loot.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/minecraft/tags/item/enchantable/vanishing.json
+89164c97d569cb5a6f368aded561e11428a42b38 data/minecraft/tags/item/pickaxes.json
+c4b0fb5921ca48ddba0e0d1faea0912d7801f1b1 data/onlyhammers/tags/item/copper_hammer.json
 834d8bc039229cb4808b12451f450aa8446e4511 data/onlyhammers/tags/item/diamond_hammer.json
 05cfb51d08249f08a2d8df794ebb3acf8ef663b0 data/onlyhammers/tags/item/emerald_hammer.json
 8c4f379d97e2cd8c7f9297bf4fab7e60083ecb0d data/onlyhammers/tags/item/emerald_hammers_reapirs.json

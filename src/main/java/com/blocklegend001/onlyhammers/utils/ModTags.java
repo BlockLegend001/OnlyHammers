@@ -11,6 +11,7 @@ public class ModTags {
 
         public static final TagKey<Item> WOODEN_HAMMER = createTag("wooden_hammer");
         public static final TagKey<Item> STONE_HAMMER = createTag("stone_hammer");
+        public static final TagKey<Item> COPPER_HAMMER = createTag("copper_hammer");
         public static final TagKey<Item> IRON_HAMMER = createTag("iron_hammer");
         public static final TagKey<Item> GOLD_HAMMER = createTag("gold_hammer");
         public static final TagKey<Item> LAPIS_HAMMER = createTag("lapis_hammer");

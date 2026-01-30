@@ -20,6 +20,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -31,6 +32,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.MINING_LOOT_ENCHANTABLE).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -42,6 +44,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.VANISHING_ENCHANTABLE).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -53,6 +56,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.MINING_ENCHANTABLE).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -64,6 +68,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.PICKAXES).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -75,6 +80,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.BREAKS_DECORATED_POTS).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -86,6 +92,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ItemTags.CLUSTER_MAX_HARVESTABLES).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -97,6 +104,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ConventionalItemTags.TOOLS).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -108,6 +116,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ConventionalItemTags.MINING_TOOL_TOOLS).add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
+                .add(ModItems.COPPER_HAMMER)
                 .add(ModItems.IRON_HAMMER)
                 .add(ModItems.GOLD_HAMMER)
                 .add(ModItems.LAPIS_HAMMER)
@@ -119,6 +128,7 @@ public class ModItemTagsGeneration extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ModTags.Items.WOODEN_HAMMER).add(ModItems.WOODEN_HAMMER);
         valueLookupBuilder(ModTags.Items.STONE_HAMMER).add(ModItems.STONE_HAMMER);
+        valueLookupBuilder(ModTags.Items.COPPER_HAMMER).add(ModItems.COPPER_HAMMER);
         valueLookupBuilder(ModTags.Items.IRON_HAMMER).add(ModItems.IRON_HAMMER);
         valueLookupBuilder(ModTags.Items.GOLD_HAMMER).add(ModItems.GOLD_HAMMER);
         valueLookupBuilder(ModTags.Items.LAPIS_HAMMER).add(ModItems.LAPIS_HAMMER);
