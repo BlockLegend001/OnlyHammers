@@ -4,7 +4,10 @@ import com.blocklegend001.onlyhammers.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
-import net.minecraft.client.data.models.model.*;
+import net.minecraft.client.data.models.model.ModelTemplate;
+import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.client.renderer.item.BlockModelWrapper;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.CachedOutput;
@@ -36,6 +39,7 @@ public class ModItemModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         toolModel(itemModels, ModItems.WOODEN_HAMMER.get());
         toolModel(itemModels, ModItems.STONE_HAMMER.get());
+        toolModel(itemModels, ModItems.COPPER_HAMMER.get());
         toolModel(itemModels, ModItems.IRON_HAMMER.get());
         toolModel(itemModels, ModItems.GOLD_HAMMER.get());
         toolModel(itemModels, ModItems.LAPIS_HAMMER.get());

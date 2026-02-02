@@ -1,4 +1,5 @@
-// 1.21.10	2025-10-16T11:26:19.7157356	Model Definitions
+// 1.21.10	2026-02-02T22:36:56.3377864	Model Definitions
+ff5be4ba8389ec52f872c29da5e02dfc10716eed assets/onlyhammers/items/copper_hammer.json
 8ffcc31e9be72a867fc6e5ae5d8925bec8d0a8b8 assets/onlyhammers/items/diamond_hammer.json
 cc92941f0baa938f77dbf42047d48a3f0d063701 assets/onlyhammers/items/emerald_hammer.json
 a95c8175be424b753ca51d5ff4e164dd501a13ad assets/onlyhammers/items/gold_hammer.json
@@ -9,6 +10,7 @@ a95c8175be424b753ca51d5ff4e164dd501a13ad assets/onlyhammers/items/gold_hammer.js
 40da4d4d7bb863a0375887fa7dca6c5a9f9a4e04 assets/onlyhammers/items/redstone_hammer.json
 f116776a883329f126c3fb18536a4df537b92b2c assets/onlyhammers/items/stone_hammer.json
 04603a890594cbda800338555bc6d640205f3af1 assets/onlyhammers/items/wooden_hammer.json
+ca9f94acf5692709dd41ddce2c420bef581a30e3 assets/onlyhammers/models/item/copper_hammer.json
 ca760c766c96829feb028803cc4835176e7c104c assets/onlyhammers/models/item/diamond_hammer.json
 ad1d8ab4eb63d63608eb2d5fb16c5b1636fdcdda assets/onlyhammers/models/item/emerald_hammer.json
 55e65d97f15ffeec493a7e399c63474d9ef832c4 assets/onlyhammers/models/item/gold_hammer.json

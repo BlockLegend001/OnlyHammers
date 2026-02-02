@@ -3,7 +3,6 @@ package com.blocklegend001.onlyhammers;
 import com.blocklegend001.onlyhammers.item.ModCreativeModeTabs;
 import com.blocklegend001.onlyhammers.item.ModItems;
 import com.mojang.logging.LogUtils;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -38,6 +37,7 @@ public class OnlyHammers {
         if(event.getTab() == ModCreativeModeTabs.ONLYHAMMERS.get()) {
             event.accept(ModItems.WOODEN_HAMMER);
             event.accept(ModItems.STONE_HAMMER);
+            event.accept(ModItems.COPPER_HAMMER);
             event.accept(ModItems.IRON_HAMMER);
             event.accept(ModItems.GOLD_HAMMER);
             event.accept(ModItems.LAPIS_HAMMER);
