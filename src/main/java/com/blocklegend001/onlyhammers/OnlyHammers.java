@@ -38,6 +38,7 @@ public class OnlyHammers {
         if(event.getTab() == ModCreativeModeTabs.ONLYHAMMERS.get()) {
             event.accept(ModItems.WOODEN_HAMMER);
             event.accept(ModItems.STONE_HAMMER);
+            event.accept(ModItems.COPPER_HAMMER);
             event.accept(ModItems.IRON_HAMMER);
             event.accept(ModItems.GOLD_HAMMER);
             event.accept(ModItems.LAPIS_HAMMER);

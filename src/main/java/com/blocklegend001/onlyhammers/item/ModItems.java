@@ -27,6 +27,11 @@ public class ModItems {
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(OnlyHammers.MOD_ID, "stone_hammer")))
                     .repairable(ItemTags.STONE_TOOL_MATERIALS)));
 
+    public static final RegistryObject<Item> COPPER_HAMMER = ITEMS.register("copper_hammer",
+            () -> new Hammer(ModToolMaterials.COPPER_HAMMER, 1F, -3.3F, new Item.Properties()
+                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(OnlyHammers.MOD_ID, "copper_hammer")))
+                    .repairable(ItemTags.COPPER_TOOL_MATERIALS)));
+
     public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
             () -> new Hammer(ModToolMaterials.IRON_HAMMER, 1F, -3.3F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(OnlyHammers.MOD_ID, "iron_hammer")))

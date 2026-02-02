@@ -59,6 +59,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.STONE), has(Items.COBBLESTONE))
                 .save(this.output);
 
+        shaped(RecipeCategory.TOOLS, ModItems.COPPER_HAMMER.get())
+                .pattern("bBb")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('S', Items.STICK)
+                .define('B', Items.COPPER_INGOT)
+                .define('b', Blocks.COPPER_BLOCK)
+                .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(this.output);
+
         shaped(RecipeCategory.TOOLS, ModItems.IRON_HAMMER.get())
                 .pattern("bBb")
                 .pattern(" S ")

@@ -11,6 +11,7 @@ public class ModConfigs {
 
     public static final ForgeConfigSpec.IntValue durabilityWoodenHammer;
     public static final ForgeConfigSpec.IntValue durabilityStoneHammer;
+    public static final ForgeConfigSpec.IntValue durabilityCopperHammer;
     public static final ForgeConfigSpec.IntValue durabilityIronHammer;
     public static final ForgeConfigSpec.IntValue durabilityGoldHammer;
     public static final ForgeConfigSpec.IntValue durabilityLapisHammer;
@@ -22,6 +23,7 @@ public class ModConfigs {
 
     public static final ForgeConfigSpec.IntValue radiusWoodenHammer;
     public static final ForgeConfigSpec.IntValue radiusStoneHammer;
+    public static final ForgeConfigSpec.IntValue radiusCopperHammer;
     public static final ForgeConfigSpec.IntValue radiusIronHammer;
     public static final ForgeConfigSpec.IntValue radiusGoldHammer;
     public static final ForgeConfigSpec.IntValue radiusLapisHammer;
@@ -39,6 +41,8 @@ public class ModConfigs {
                 .defineInRange("Wooden", 302, 0, Integer.MAX_VALUE);
         durabilityStoneHammer = BUILDER.comment("Durability of the stone hammer.")
                 .defineInRange("Stone", 650, 0, Integer.MAX_VALUE);
+        durabilityCopperHammer = BUILDER.comment("Durability of the copper hammer.")
+                .defineInRange("Copper", 850, 0, Integer.MAX_VALUE);
         durabilityIronHammer = BUILDER.comment("Durability of the iron hammer.")
                 .defineInRange("Iron", 1300, 0, Integer.MAX_VALUE);
         durabilityGoldHammer = BUILDER.comment("Durability of the gold hammer.")
@@ -62,6 +66,8 @@ public class ModConfigs {
                 .defineInRange("Wooden", 1, 0, Integer.MAX_VALUE);
         radiusStoneHammer = BUILDER.comment("Hammering radius for Stone Hammer (radius 1 = 3×1 area)")
                 .defineInRange("Stone", 1, 0, Integer.MAX_VALUE);
+        radiusCopperHammer = BUILDER.comment("Hammering radius for Copper Hammer (radius 1 = 3×1 area)")
+                .defineInRange("Copper", 1, 0, Integer.MAX_VALUE);
         radiusIronHammer = BUILDER.comment("Hammering radius for Iron Hammer (radius 1 = 3×1 area)")
                 .defineInRange("Iron", 1, 0, Integer.MAX_VALUE);
         radiusGoldHammer = BUILDER.comment("Hammering radius for Gold Hammer (radius 1 = 3×1 area)")
