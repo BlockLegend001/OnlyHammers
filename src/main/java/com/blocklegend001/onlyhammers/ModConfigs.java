@@ -16,6 +16,7 @@ public class ModConfigs {
     // Configurazioni per gli Hammers
     public static int DurabilityWoodenHammer = 302;
     public static int DurabilityStoneHammer = 650;
+    public static int DurabilityCopperHammer = 850;
     public static int DurabilityIronHammer = 1300;
     public static int DurabilityGoldHammer = 750;
     public static int DurabilityLapisHammer = 1100;
@@ -27,6 +28,7 @@ public class ModConfigs {
 
     public static int radiusWoodenHammer = 1;
     public static int radiusStoneHammer = 1;
+    public static int radiusCopperHammer = 1;
     public static int radiusIronHammer = 1;
     public static int radiusGoldHammer = 1;
     public static int radiusLapisHammer = 1;
@@ -45,6 +47,7 @@ public class ModConfigs {
 
                 DurabilityWoodenHammer = config.get("DurabilityWoodenHammer").getAsInt();
                 DurabilityStoneHammer = config.get("DurabilityStoneHammer").getAsInt();
+                DurabilityCopperHammer = config.get("DurabilityCopperHammer").getAsInt();
                 DurabilityIronHammer = config.get("DurabilityIronHammer").getAsInt();
                 DurabilityGoldHammer = config.get("DurabilityGoldHammer").getAsInt();
                 DurabilityLapisHammer = config.get("DurabilityLapisHammer").getAsInt();
@@ -56,6 +59,7 @@ public class ModConfigs {
 
                 radiusWoodenHammer = config.get("radiusWoodenHammer").getAsInt();
                 radiusStoneHammer = config.get("radiusStoneHammer").getAsInt();
+                radiusCopperHammer = config.get("radiusCopperHammer").getAsInt();
                 radiusIronHammer = config.get("radiusIronHammer").getAsInt();
                 radiusGoldHammer = config.get("radiusGoldHammer").getAsInt();
                 radiusLapisHammer = config.get("radiusLapisHammer").getAsInt();
@@ -75,6 +79,7 @@ public class ModConfigs {
 
         config.addProperty("DurabilityWoodenHammer", DurabilityWoodenHammer);
         config.addProperty("DurabilityStoneHammer", DurabilityStoneHammer);
+        config.addProperty("DurabilityCopperHammer", DurabilityCopperHammer);
         config.addProperty("DurabilityIronHammer", DurabilityIronHammer);
         config.addProperty("DurabilityGoldHammer", DurabilityGoldHammer);
         config.addProperty("DurabilityLapisHammer", DurabilityLapisHammer);
@@ -86,6 +91,7 @@ public class ModConfigs {
 
         config.addProperty("radiusWoodenHammer", radiusWoodenHammer);
         config.addProperty("radiusStoneHammer", radiusStoneHammer);
+        config.addProperty("radiusCopperHammer", radiusCopperHammer);
         config.addProperty("radiusIronHammer", radiusIronHammer);
         config.addProperty("radiusGoldHammer", radiusGoldHammer);
         config.addProperty("radiusLapisHammer", radiusLapisHammer);

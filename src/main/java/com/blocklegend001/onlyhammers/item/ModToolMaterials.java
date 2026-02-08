@@ -26,12 +26,21 @@ public class ModToolMaterials {
             ItemTags.STONE_TOOL_MATERIALS
     );
 
+    public static final ToolMaterial COPPER_HAMMER = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_COPPER_TOOL,
+            ModConfigs.DurabilityStoneHammer,
+            4,
+            1.0F,
+            5,
+            ItemTags.COPPER_TOOL_MATERIALS
+    );
+
     public static final ToolMaterial IRON_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_IRON_TOOL,
             ModConfigs.DurabilityIronHammer,
-            6,
-            2.0F,
-            14,
+            5,
+            1.0F,
+            13,
             ItemTags.IRON_TOOL_MATERIALS
     );
 

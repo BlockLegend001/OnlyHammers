@@ -1,6 +1,7 @@
 {
   "DurabilityWoodenHammer": 302,
   "DurabilityStoneHammer": 650,
+  "DurabilityCopperHammer": 850,
   "DurabilityIronHammer": 1300,
   "DurabilityGoldHammer": 750,
   "DurabilityLapisHammer": 1100,
@@ -11,6 +12,7 @@
   "DurabilityNetheriteHammer": 13675,
   "radiusWoodenHammer": 1,
   "radiusStoneHammer": 1,
+  "radiusCopperHammer": 1,
   "radiusIronHammer": 1,
   "radiusGoldHammer": 1,
   "radiusLapisHammer": 1,
