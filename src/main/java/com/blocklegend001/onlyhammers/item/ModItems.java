@@ -1,7 +1,7 @@
 package com.blocklegend001.onlyhammers.item;
 
 import com.blocklegend001.onlyhammers.OnlyHammers;
-import com.blocklegend001.onlyhammers.item.custom.*;
+import com.blocklegend001.onlyhammers.item.custom.Hammer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -23,6 +23,10 @@ public class ModItems {
     public static final DeferredItem<Item> STONE_HAMMER = ITEMS.register("stone_hammer",
             () -> new Hammer(ModToolMaterials.STONE_HAMMER, 1, -3.3F, new Item.Properties()
                     .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(OnlyHammers.MOD_ID, "stone_hammer")))));
+
+    public static final DeferredItem<Item> COPPER_HAMMER = ITEMS.register("copper_hammer",
+            () -> new Hammer(ModToolMaterials.COPPER_HAMMER, 1, -3.3F, new Item.Properties()
+                    .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(OnlyHammers.MOD_ID, "copper_hammer")))));
 
     public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
             () -> new Hammer(ModToolMaterials.IRON_HAMMER, 1, -3.3F, new Item.Properties()

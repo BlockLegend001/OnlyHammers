@@ -25,6 +25,7 @@ public class ModItemModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModel(itemModels, ModItems.WOODEN_HAMMER.get());
         itemModel(itemModels, ModItems.STONE_HAMMER.get());
+        itemModel(itemModels, ModItems.COPPER_HAMMER.get());
         itemModel(itemModels, ModItems.IRON_HAMMER.get());
         itemModel(itemModels, ModItems.GOLD_HAMMER.get());
         itemModel(itemModels, ModItems.REDSTONE_HAMMER.get());
