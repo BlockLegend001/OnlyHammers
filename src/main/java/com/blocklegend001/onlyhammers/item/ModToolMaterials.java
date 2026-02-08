@@ -29,9 +29,9 @@ public class ModToolMaterials {
     public static final ToolMaterial COPPER_HAMMER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_COPPER_TOOL,
             ModConfigs.DurabilityStoneHammer,
-            4,
-            1.0F,
             5,
+            1.0F,
+            13,
             ItemTags.COPPER_TOOL_MATERIALS
     );
 
