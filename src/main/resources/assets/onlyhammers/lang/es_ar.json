@@ -10,8 +10,8 @@
   "item.onlyhammers.obsidian_hammer": "Martillo de obsidiana",
   "item.onlyhammers.netherite_hammer": "Martillo de netherite",
 
-  "key.onlyhammers.onlyhammers.showoutline": "Solo Martillo",
-  "key.onlyexcavators.showoutline": "Habilitar/Deshabilitar Esquema",
+  "key.category.onlyhammers.showoutline": "Solo Martillo",
+  "key.onlyhammers.showoutline": "Habilitar/Deshabilitar Esquema",
 
   "itemGroup.onlyhammers.onlyhammers": "Solo Martillos"
 }
