@@ -1,5 +1,6 @@
 package com.blocklegend001.onlyhammers.utils;
 
+import com.blocklegend001.onlyhammers.OnlyHammersClient;
 import com.blocklegend001.onlyhammers.item.custom.Hammer;
 import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.minecraft.client.MinecraftClient;
@@ -19,6 +20,8 @@ public class HammerOverlayRenderer {
     public static void init() {
         WorldRenderEvents.AFTER_ENTITIES.register(context -> {
             MinecraftClient client = MinecraftClient.getInstance();
+            if (!OnlyHammersClient.SHOW_OUTLINE_ENABLED) return;;
+
             if (client.world == null || client.player == null) return;
 
             ItemStack heldItem = client.player.getMainHandStack();
