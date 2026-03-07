@@ -1,5 +1,6 @@
 package com.blocklegend001.onlyhammers.mixin;
 
+import com.blocklegend001.onlyhammers.OnlyHammersClient;
 import com.blocklegend001.onlyhammers.utils.RadiusMap;
 import com.blocklegend001.onlyhammers.utils.WorldRenderContext;
 import com.mojang.blaze3d.buffers.GpuBufferSlice;
@@ -30,6 +31,8 @@ public class HammerOverlayRenderer {
                                  GpuBufferSlice fogBuffer, Vector4f fogColor, boolean renderSky, CallbackInfo ci) {
 
         MinecraftClient client = MinecraftClient.getInstance();
+
+        if (!OnlyHammersClient.SHOW_OUTLINE_ENABLED) return;
 
         if (client.world == null || client.player == null) return;
 
