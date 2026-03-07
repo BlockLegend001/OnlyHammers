@@ -2,8 +2,11 @@ package com.blocklegend001.onlyhammers;
 
 import com.blocklegend001.onlyhammers.item.ModCreativeModeTabs;
 import com.blocklegend001.onlyhammers.item.ModItems;
+import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.KeyMapping;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.util.Lazy;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
+import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
 
 @Mod(OnlyHammers.MOD_ID)
@@ -18,6 +22,16 @@ public class OnlyHammers {
 
     public static final String MOD_ID = "onlyhammers";
     private static final Logger LOGGER = LogUtils.getLogger();
+    public static boolean SHOW_OUTLINE_ENABLED = true;
+
+    public static final Lazy<KeyMapping> SHOW_OUTLINE_KEY = Lazy.of(() ->
+            new KeyMapping(
+                    "key.onlyhammers.showoutline",
+                    InputConstants.Type.KEYSYM,
+                    GLFW.GLFW_KEY_O,
+                    "key.category.onlyhammers.showoutline"
+            )
+    );
 
     public OnlyHammers(FMLJavaModLoadingContext context) {
         var modBusGroup = context.getModBusGroup();
