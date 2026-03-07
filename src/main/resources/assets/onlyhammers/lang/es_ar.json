@@ -1,7 +1,6 @@
 {
   "item.onlyhammers.wooden_hammer": "Martillo de madera",
   "item.onlyhammers.stone_hammer": "Martillo de piedra",
-  "item.onlyhammers.copper_hammer": "Martillo de cobre",
   "item.onlyhammers.iron_hammer": "Martillo de hierro",
   "item.onlyhammers.gold_hammer": "Martillo de oro",
   "item.onlyhammers.lapis_hammer": "Martillo de lapislázuli",
@@ -11,5 +10,8 @@
   "item.onlyhammers.obsidian_hammer": "Martillo de obsidiana",
   "item.onlyhammers.netherite_hammer": "Martillo de netherite",
 
-  "itemGroup.onlyhammers.onlyhammers": "Solo Martillos y Excavadoras"
+  "key.category.onlyhammers.showoutline": "Solo Martillo",
+  "key.onlyhammers.showoutline": "Habilitar/Deshabilitar Esquema",
+
+  "itemGroup.onlyhammers.onlyhammers": "Solo Martillos"
 }
