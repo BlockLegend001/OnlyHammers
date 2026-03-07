@@ -1,5 +1,6 @@
 package com.blocklegend001.onlyhammers.mixin;
 
+import com.blocklegend001.onlyhammers.OnlyHammers;
 import com.blocklegend001.onlyhammers.item.custom.Hammer;
 import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
 import com.blocklegend001.onlyhammers.utils.RadiusMap;
@@ -30,6 +31,8 @@ public class LevelRendererMixin {
         if (Minecraft.getInstance().level == null || Minecraft.getInstance().player == null) {
             return;
         }
+
+        if (!OnlyHammers.SHOW_OUTLINE_ENABLED) return;
 
         ItemStack heldItem = Minecraft.getInstance().player.getMainHandItem();
         if (!(heldItem.getItem() instanceof Hammer)) {
