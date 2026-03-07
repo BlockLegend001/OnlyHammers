@@ -1,0 +1,32 @@
+package com.blocklegend001.onlyhammers.event;
+
+import com.blocklegend001.onlyhammers.OnlyHammers;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.chat.Component;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod.EventBusSubscriber(modid = OnlyHammers.MOD_ID, value = Dist.CLIENT)
+public class KeyBindingEvents {
+
+    @SubscribeEvent
+    public static void onClientTick(TickEvent.ClientTickEvent event) {
+        if (event.phase != TickEvent.Phase.END) return;
+
+        while (OnlyHammers.SHOW_OUTLINE_KEY.get().consumeClick()) {
+            OnlyHammers.SHOW_OUTLINE_ENABLED =
+                    !OnlyHammers.SHOW_OUTLINE_ENABLED;
+
+            if (Minecraft.getInstance().player != null) {
+                Minecraft.getInstance().player.sendSystemMessage(
+                        Component.literal(
+                                "Outline: " +
+                                        (OnlyHammers.SHOW_OUTLINE_ENABLED ? "ON" : "OFF")
+                        )
+                );
+            }
+        }
+    }
+}
