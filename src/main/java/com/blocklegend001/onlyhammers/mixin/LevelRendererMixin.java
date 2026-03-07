@@ -1,5 +1,6 @@
 package com.blocklegend001.onlyhammers.mixin;
 
+import com.blocklegend001.onlyhammers.OnlyHammers;
 import com.blocklegend001.onlyhammers.item.custom.Hammer;
 import com.blocklegend001.onlyhammers.utils.RadiusMap;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -29,6 +30,8 @@ public class LevelRendererMixin {
                                   Matrix4f projection, CallbackInfo ci) {
 
         Minecraft mc = Minecraft.getInstance();
+
+        if (!OnlyHammers.SHOW_OUTLINE_ENABLED) return;
 
         if (mc.level == null || mc.player == null) return;
 

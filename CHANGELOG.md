@@ -1,1 +1,1 @@
-- Fixed one bug about the render
+- Added KeyBind to Enable/Disable the Outline
