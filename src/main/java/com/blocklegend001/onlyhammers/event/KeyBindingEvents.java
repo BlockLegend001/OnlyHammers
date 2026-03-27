@@ -1,6 +1,7 @@
 package com.blocklegend001.onlyhammers.event;
 
 import com.blocklegend001.onlyhammers.OnlyHammers;
+import com.blocklegend001.onlyhammers.utils.KeyBinding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,7 +16,7 @@ public class KeyBindingEvents {
     public static void onClientTick(TickEvent.ClientTickEvent event) {
         if (event.phase != TickEvent.Phase.END) return;
 
-        while (OnlyHammers.SHOW_OUTLINE_KEY.get().consumeClick()) {
+        while (KeyBinding.SHOW_OUTLINE_KEY.consumeClick()) {
             OnlyHammers.SHOW_OUTLINE_ENABLED =
                     !OnlyHammers.SHOW_OUTLINE_ENABLED;
 
