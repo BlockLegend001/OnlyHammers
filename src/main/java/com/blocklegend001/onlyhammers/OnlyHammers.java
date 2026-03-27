@@ -25,15 +25,6 @@ public class OnlyHammers {
     private static final Logger LOGGER = LogUtils.getLogger();
     public static boolean SHOW_OUTLINE_ENABLED = true;
 
-    public static final Lazy<KeyMapping> SHOW_OUTLINE_KEY = Lazy.of(() ->
-            new KeyMapping(
-                    "key.onlyhammers.showoutline",
-                    InputConstants.Type.KEYSYM,
-                    GLFW.GLFW_KEY_O,
-                    "key.category.onlyhammers.showoutline"
-            )
-    );
-
     public OnlyHammers(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
         context.registerConfig(ModConfig.Type.COMMON, ModConfigs.SPEC, "onlyhammers.toml");
