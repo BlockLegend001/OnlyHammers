@@ -26,15 +26,6 @@ public class OnlyHammers {
 
     public static boolean SHOW_OUTLINE_ENABLED = true;
 
-    public static final Lazy<KeyMapping> SHOW_OUTLINE_KEY = Lazy.of(() ->
-            new KeyMapping(
-                    "key.onlyhammers.showoutline",
-                    InputConstants.Type.KEYSYM,
-                    GLFW.GLFW_KEY_O,
-                    "key.category.onlyhammers.showoutline"
-            )
-    );
-
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONLYHAMMERS = CREATIVE_MODE_TABS.register("onlyhammers", () -> CreativeModeTab.builder()
