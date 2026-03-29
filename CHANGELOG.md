@@ -1,1 +1,1 @@
-- Added KeyBind to Enable/Disable the Outline
+- Fixed a bug that let the server crash with the latest update
