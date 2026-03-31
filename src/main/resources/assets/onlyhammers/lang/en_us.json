@@ -11,8 +11,8 @@
   "item.onlyhammers.obsidian_hammer": "Obsidian Hammer",
   "item.onlyhammers.netherite_hammer": "Netherite Hammer",
 
-  "key.category.onlyhammers.showoutline": "OnlyHammer",
+  "key.category.onlyhammers.showoutline": "OnlyHammers",
   "key.onlyhammers.showoutline": "Enable/Disable Outline",
 
-  "itemGroup.onlyhammers.onlyhammers": "Only Hammers"
+  "creativemodetab.onlyhammers": "Only Hammers"
 }
