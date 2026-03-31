@@ -1,1 +1,1 @@
-- Fixed a bug that let the server crash with the latest update
+- Added the missing language file for copper hammer
