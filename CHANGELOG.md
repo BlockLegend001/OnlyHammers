@@ -1,1 +1,1 @@
-- Added KeyBind to Enable/Disable the Outline
+- Added the missing language file for copper hammer
