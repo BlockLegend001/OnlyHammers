@@ -16,7 +16,7 @@ public class KeyBindingEvents {
     public static void onClientTick(TickEvent.ClientTickEvent event) {
         if (event.phase != TickEvent.Phase.END) return;
 
-        while (KeyBinding.SHOW_OUTLINE_KEY.consumeClick()) {
+        while (KeyBinding.HAMMERS_SHOW_OUTLINE_KEY.consumeClick()) {
             OnlyHammers.SHOW_OUTLINE_ENABLED =
                     !OnlyHammers.SHOW_OUTLINE_ENABLED;
 
