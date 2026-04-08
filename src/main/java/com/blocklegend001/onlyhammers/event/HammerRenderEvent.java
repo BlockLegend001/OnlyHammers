@@ -1,4 +1,4 @@
-package com.blocklegend001.onlyhammers.mixin;
+package com.blocklegend001.onlyhammers.event;
 
 import com.blocklegend001.onlyhammers.OnlyHammers;
 import com.blocklegend001.onlyhammers.item.custom.Hammer;
@@ -6,9 +6,9 @@ import com.blocklegend001.onlyhammers.utils.HammerOverlayRenderer;
 import com.blocklegend001.onlyhammers.utils.RadiusMap;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.Camera;
-import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.*;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
@@ -17,56 +17,53 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RenderLevelStageEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import org.joml.Matrix4f;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(LevelRenderer.class)
-public class LevelRendererMixin {
-    @Inject(method = "renderLevel", at = @At("TAIL"))
-    private void renderLevelAfter(DeltaTracker p_342180_, boolean p_109603_, Camera p_109604_, GameRenderer p_109605_, LightTexture p_109606_, Matrix4f p_254120_, Matrix4f p_330527_, CallbackInfo ci) {
+@Mod.EventBusSubscriber(modid = OnlyHammers.MOD_ID, value = Dist.CLIENT)
+public class HammerRenderEvent {
 
-        if (Minecraft.getInstance().level == null || Minecraft.getInstance().player == null) {
-            return;
-        }
+    @SubscribeEvent
+    public static void onRenderLevel(RenderLevelStageEvent event) {
+        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS) return;
 
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.level == null || mc.player == null) return;
         if (!OnlyHammers.SHOW_OUTLINE_ENABLED) return;
 
-        ItemStack heldItem = Minecraft.getInstance().player.getMainHandItem();
-        if (!(heldItem.getItem() instanceof Hammer)) {
-            return;
-        }
+        ItemStack heldItem = mc.player.getMainHandItem();
+        if (!(heldItem.getItem() instanceof Hammer)) return;
 
-        if (!(Minecraft.getInstance().hitResult instanceof BlockHitResult blockHit) || blockHit.getType() != HitResult.Type.BLOCK) {
-            return;
-        }
+        if (!(mc.hitResult instanceof BlockHitResult blockHit) ||
+                blockHit.getType() != HitResult.Type.BLOCK) return;
 
         BlockPos origin = blockHit.getBlockPos();
         Direction side = blockHit.getDirection();
-        int range;
-        if (Minecraft.getInstance().player.isShiftKeyDown()) {
-            range = 0;
-        } else {
-            range = RadiusMap.getHammerRadius().get(heldItem.getItem());
-        }
 
+        if (!mc.level.getBlockState(origin).is(BlockTags.MINEABLE_WITH_PICKAXE)) return;
 
-        if (!Minecraft.getInstance().level.getBlockState(origin).is(BlockTags.MINEABLE_WITH_PICKAXE)) {
-            return;
-        }
+        int range = mc.player.isShiftKeyDown() ? 0 :
+                RadiusMap.getHammerRadius().get(heldItem.getItem());
 
         AABB box = getSelectionBox(range, side, origin);
 
-        Vec3 cameraPos = p_109604_.getPosition();
-        box = box.move(-cameraPos.x, -cameraPos.y, -cameraPos.z);
+        Camera camera = event.getCamera();
+        Vec3 camPos = camera.getPosition();
 
-        Matrix4f matrix = p_254120_;
-        MultiBufferSource.BufferSource buffer = Minecraft.getInstance().renderBuffers().bufferSource();
+        Matrix4f viewMatrix = new Matrix4f();
+        viewMatrix.identity();
+        viewMatrix.translate((float) -camPos.x, (float) -camPos.y, (float) -camPos.z);
+
+        Matrix4f combinedMatrix = new Matrix4f(event.getProjectionMatrix());
+        combinedMatrix.mul(viewMatrix);
+
+        MultiBufferSource.BufferSource buffer = mc.renderBuffers().bufferSource();
         VertexConsumer builder = buffer.getBuffer(RenderType.lines());
 
-        HammerOverlayRenderer.drawBox(matrix, builder, box, 1f, 1f, 1f, 1f);
+        HammerOverlayRenderer.drawBox(builder, camera.getPosition(), box, 1f, 1f, 1f, 1f);
 
         buffer.endBatch();
     }
@@ -82,7 +79,6 @@ public class LevelRendererMixin {
                     case X -> origin.offset(0, y, x);
                     case Z -> origin.offset(x, y, 0);
                 };
-
                 minX = Math.min(minX, pos.getX());
                 minY = Math.min(minY, pos.getY());
                 minZ = Math.min(minZ, pos.getZ());
@@ -91,7 +87,6 @@ public class LevelRendererMixin {
                 maxZ = Math.max(maxZ, pos.getZ() + 1);
             }
         }
-
         return new AABB(minX, minY, minZ, maxX, maxY, maxZ);
     }
 }
