@@ -10,13 +10,13 @@ import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
 
 public class OnlyHammersClient implements ClientModInitializer {
-    public static KeyBinding SHOW_OUTLINE_KEY;
+    public static KeyBinding HAMMER_SHOW_OUTLINE_KEY;
     private static boolean wasPressed = false;
     public static boolean SHOW_OUTLINE_ENABLED = true;
 
     @Override
     public void onInitializeClient() {
-        SHOW_OUTLINE_KEY = KeyBindingHelper.registerKeyBinding(
+        HAMMER_SHOW_OUTLINE_KEY = KeyBindingHelper.registerKeyBinding(
                 new KeyBinding(
                         "key.onlyhammers.showoutline",
                         InputUtil.Type.KEYSYM,
@@ -26,7 +26,7 @@ public class OnlyHammersClient implements ClientModInitializer {
         );
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (SHOW_OUTLINE_KEY.isPressed()) {
+            if (HAMMER_SHOW_OUTLINE_KEY.isPressed()) {
                 if (!wasPressed) {
                     SHOW_OUTLINE_ENABLED = !SHOW_OUTLINE_ENABLED;
 

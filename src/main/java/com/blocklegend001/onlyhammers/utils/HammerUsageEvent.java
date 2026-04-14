@@ -26,7 +26,7 @@ public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
 
         if (!(player instanceof ServerPlayerEntity serverPlayer)) return true;
         ItemStack mainHandItem = player.getMainHandStack();
-        if (!(mainHandItem.getItem() instanceof Hammer excavator)) return true;
+        if (!(mainHandItem.getItem() instanceof Hammer hammer)) return true;
 
         if (HARVESTED_BLOCKS.contains(pos)) return true;
 
@@ -40,7 +40,7 @@ public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
                 if (targetPos.equals(pos)) continue;
 
                 if (HARVESTED_BLOCKS.contains(targetPos)) continue;
-                if (!excavator.isSuitableFor(mainHandItem, world.getBlockState(targetPos))) continue;
+                if (!hammer.isSuitableFor(mainHandItem, world.getBlockState(targetPos))) continue;
 
                 HARVESTED_BLOCKS.add(targetPos);
                 serverPlayer.interactionManager.tryBreakBlock(targetPos);
