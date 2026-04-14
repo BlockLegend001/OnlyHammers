@@ -18,7 +18,7 @@ public class KeyBinding {
                     ResourceLocation.fromNamespaceAndPath(MOD_ID, "showoutline")
             );
 
-    public static final KeyMapping SHOW_OUTLINE_KEY =
+    public static final KeyMapping HAMMER_SHOW_OUTLINE_KEY =
             new KeyMapping(
                     "key.onlyhammers.showoutline",
                     InputConstants.Type.KEYSYM,
@@ -28,6 +28,6 @@ public class KeyBinding {
 
     @SubscribeEvent
     public static void registerKeys(RegisterKeyMappingsEvent event) {
-        event.register(SHOW_OUTLINE_KEY);
+        event.register(HAMMER_SHOW_OUTLINE_KEY);
     }
 }
