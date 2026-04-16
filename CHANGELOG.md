@@ -1,1 +1,1 @@
-- Fixed a bug that let the server crash with the latest update
+- Bug fixes
