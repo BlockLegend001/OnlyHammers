@@ -2,6 +2,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id "me.modmuss50.mod-publish-plugin" version "0.7.3"
 }
 
 group = mod_group_id
@@ -93,4 +94,36 @@ sourceSets.each {
     def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
     it.output.resourcesDir = dir
     it.java.destinationDirectory = dir
+}
+
+publishMods {
+    displayName = "$mod_name-$mod_version-Forge"
+    version = mod_version
+    type = STABLE
+
+    def changelogFile = file('CHANGELOG.md')
+    changelog = changelogFile.exists() ? changelogFile.text : 'CHANGELOG.md not found'
+
+    modLoaders.add('forge')
+    file = jar.archiveFile
+
+    curseforge {
+        accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
+        projectId = "909723"
+        minecraftVersions.add(minecraft_version)
+        clientRequired = true
+        serverRequired = true
+    }
+
+    modrinth {
+        accessToken = providers.environmentVariable("MODRINTH_TOKEN")
+        projectId = "p5wmRC3H"
+        minecraftVersions.add(minecraft_version)
+    }
+}
+
+tasks.publishMods.group = "other"
+tasks.register("publishAll") {
+    group = "publishing"
+    dependsOn(tasks.publishMods)
 }
