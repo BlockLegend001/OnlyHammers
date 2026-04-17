@@ -2,7 +2,9 @@ package com.blocklegend001.onlyhammers;
 
 import com.blocklegend001.onlyhammers.item.ModCreativeModeTabs;
 import com.blocklegend001.onlyhammers.item.ModItems;
+import com.blocklegend001.onlyhammers.utils.KeyBinding;
 import com.mojang.logging.LogUtils;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -27,6 +29,8 @@ public class OnlyHammers {
         ModItems.register(modBusGroup);
         BuildCreativeModeTabContentsEvent.BUS.addListener(this::addCreative);
         FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::setup);
+
+        RegisterKeyMappingsEvent.BUS.addListener(KeyBinding::registerKeys);
     }
 
     @SubscribeEvent
