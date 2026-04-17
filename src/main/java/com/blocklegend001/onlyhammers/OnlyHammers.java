@@ -2,7 +2,9 @@ package com.blocklegend001.onlyhammers;
 
 import com.blocklegend001.onlyhammers.item.ModCreativeModeTabs;
 import com.blocklegend001.onlyhammers.item.ModItems;
+import com.blocklegend001.onlyhammers.utils.KeyBinding;
 import com.mojang.logging.LogUtils;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -16,7 +18,7 @@ import org.slf4j.Logger;
 public class OnlyHammers {
 
     public static final String MOD_ID = "onlyhammers";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static boolean SHOW_OUTLINE_ENABLED = true;
 
     public OnlyHammers(FMLJavaModLoadingContext context) {
@@ -27,6 +29,9 @@ public class OnlyHammers {
         ModItems.register(modBusGroup);
         BuildCreativeModeTabContentsEvent.getBus(modBusGroup).addListener(this::addCreative);
         FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::setup);
+
+        RegisterKeyMappingsEvent.getBus(modBusGroup)
+                .addListener(KeyBinding::registerKeys);
     }
 
     @SubscribeEvent

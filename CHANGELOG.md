@@ -1,1 +1,1 @@
-- Added the missing language file for copper hammer
+- Bug fixes
