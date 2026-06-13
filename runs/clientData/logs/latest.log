@@ -1,0 +1,45 @@
+[08feb2026 20:30:28.062] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 145ms
+[08feb2026 20:30:28.072] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 10.0.36 (CLIENT in DEV)
+[08feb2026 20:30:28.072] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: D:\Programmazione\Mod\Only Hammers\NEOFORGE\1.21.11\runs\clientData
+[08feb2026 20:30:28.137] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 108) in 29ms
+[08feb2026 20:30:28.138] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
+[08feb2026 20:30:28.139] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/10.0.36/dbd0e11d545443f602addede111c39d9639708f9/earlydisplay-10.0.36.jar
+[08feb2026 20:30:28.139] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/10.0.36/f72ab4d3e755fe736829883d90430a281527aca/loader-10.0.36.jar
+[08feb2026 20:30:28.145] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Not loading early display in headless mode.
+[08feb2026 20:30:28.187] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
+[08feb2026 20:30:28.308] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates 1.21.11%%D:\Programmazione\Mod\Only Hammers\NEOFORGE\1.21.11\build\resources\main;1.21.11%%D:\Programmazione\Mod\Only Hammers\NEOFORGE\1.21.11\build\classes\java\main from env
+[08feb2026 20:30:28.491] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:mixinextras.neoforge. Using jar(C:/Users/rosar/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-neoforge/0.5.0/d734b83ce6542bb70ea31755c1595b88992dbe65/mixinextras-neoforge-0.5.0.jar)
+[08feb2026 20:30:28.492] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[08feb2026 20:30:28.494] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Minecraft 1.21.11 (minecraft)
+		NeoForge 21.11.12-beta (neoforge)
+		OnlyHammers 1.21.11-0.2 (onlyhammers)
+[08feb2026 20:30:28.797] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=FML Env=CLIENT
+[08feb2026 20:30:28.886] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
+[08feb2026 20:30:28.887] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/21.11.12-beta/3a9575466344f1dd59971b716063420063a125c2/neoforge-21.11.12-beta-universal.jar > net.neoforged.neoforge-coremods-21.11.12-beta.jar
+[08feb2026 20:30:29.154] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
+ - minecraft (composite(filtered(jar(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.11.12-beta/neoforge-21.11.12-beta.jar)), filtered(jar(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.11.12-beta/neoforge-21.11.12-beta.jar))))
+ - mixinextras.neoforge (jar(C:/Users/rosar/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-neoforge/0.5.0/d734b83ce6542bb70ea31755c1595b88992dbe65/mixinextras-neoforge-0.5.0.jar))
+ - neoforge (composite(filtered(jar(C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/21.11.12-beta/3a9575466344f1dd59971b716063420063a125c2/neoforge-21.11.12-beta-universal.jar))))
+ - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
+ - onlyhammers (composite(folder(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/build/resources/main), folder(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/build/classes/java/main)))
+[08feb2026 20:30:29.186] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 55ms
+[08feb2026 20:30:29.389] [main/WARN] [mixin/]: Reference map 'onlyhammers.refmap.json' for onlyhammers.mixins.json could not be read. If this is a development environment you can ignore this message
+[08feb2026 20:30:29.925] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[08feb2026 20:30:36.772] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [onlyhammers]
+[08feb2026 20:30:36.835] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.11.12-beta, for MC 1.21.11
+[08feb2026 20:30:38.111] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Model Definitions - onlyhammers
+[08feb2026 20:30:38.514] [main/INFO] [net.minecraft.data.DataGenerator/]: Model Definitions - onlyhammers finished after 401 ms
+[08feb2026 20:30:38.517] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id onlyhammers
+[08feb2026 20:30:38.536] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id onlyhammers finished after 17 ms
+[08feb2026 20:30:38.538] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id vanilla
+[08feb2026 20:30:38.600] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id vanilla finished after 60 ms
+[08feb2026 20:30:38.600] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[08feb2026 20:30:38.649] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 48 ms
+[08feb2026 20:30:38.650] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 538 ms
+[08feb2026 20:30:38.664] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 68, old count: 0, new count: 69, removed stale: 0, written: 68
+[08feb2026 20:30:38.664] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Closing FML Loader 55460ca1
+[08feb2026 20:30:38.665] [main/INFO] [net.neoforged.fml.ModLoader/]: Clearing ModLoader
