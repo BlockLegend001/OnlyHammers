@@ -1,1 +1,1 @@
-- Bug fixes
+- Fixed client-only mixins being incorrectly loaded on dedicated servers.
