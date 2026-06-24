@@ -5,7 +5,6 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "onlyhammers.refmap.json",
   "mixins": [
-    "LevelRendererMixin"
   ],
   "client": [
     "LevelRendererMixin"
