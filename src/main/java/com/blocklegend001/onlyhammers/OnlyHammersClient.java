@@ -32,7 +32,7 @@ public class OnlyHammersClient implements ClientModInitializer {
         );
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (HAMMER_SHOW_OUTLINE_KEY.isDown()) {
+            if (HAMMER_SHOW_OUTLINE_KEY.consumeClick()) {
                 if (!wasPressed) {
                     SHOW_OUTLINE_ENABLED = !SHOW_OUTLINE_ENABLED;
 
