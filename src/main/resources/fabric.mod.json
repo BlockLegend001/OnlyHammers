@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "onlyhammers",
+  "version": "${version}",
+  "name": "OnlyHammers",
+  "description": "A simple mod that adds various type of hammers, that mine 3x3 area",
+  "authors": [
+    "Block_Legend001"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/onlyhammers/textures/item/netherite_hammer.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.blocklegend001.onlyhammers.OnlyHammersClient"
+    ],
+    "main": [
+      "com.blocklegend001.onlyhammers.OnlyHammers"
+    ],
+    "fabric-datagen": [
+      "com.blocklegend001.onlyhammers.datagen.ModDataGeneration"
+    ]
+  },
+  "mixins": [
+    "onlyhammers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
