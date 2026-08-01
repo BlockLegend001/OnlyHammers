@@ -1,3 +1,5 @@
 /gamemode survival
 /give Dev minecraft:acacia_boat
 /give Dev onlyhammers:stone_hammer
+/gamemode survival
+/give Dev minecraft:torch
