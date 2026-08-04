@@ -57,7 +57,7 @@ public class ModRecipeProvider extends FabricRecipeProvider  {
                         .pattern(" S ")
                         .define('S', Items.STICK)
                         .define('B', Items.COPPER_INGOT)
-                        .define('b', Blocks.COPPER_BLOCK.waxed().unaffected())
+                        .define('b', Blocks.COPPER_BLOCK.weathering().unaffected())
                         .unlockedBy("has_copper_ingot", has(Items.COPPER_INGOT))
                         .save(output);
 

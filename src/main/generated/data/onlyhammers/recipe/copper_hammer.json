@@ -4,7 +4,7 @@
   "key": {
     "B": "minecraft:copper_ingot",
     "S": "minecraft:stick",
-    "b": "minecraft:waxed_copper_block"
+    "b": "minecraft:copper_block"
   },
   "pattern": [
     "bBb",
