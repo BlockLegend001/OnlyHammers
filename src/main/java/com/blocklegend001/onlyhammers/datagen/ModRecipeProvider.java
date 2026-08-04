@@ -64,7 +64,7 @@ public class ModRecipeProvider extends RecipeProvider  {
                 .pattern(" S ")
                 .define('S', Items.STICK)
                 .define('B', Items.COPPER_INGOT)
-                .define('b', Blocks.COPPER_BLOCK.waxed().unaffected())
+                .define('b', Blocks.COPPER_BLOCK.weathering().unaffected())
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .save(this.output);
 
