@@ -19,6 +19,8 @@ dependencies {
     modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}"
     modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}"
 
+    modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
@@ -65,6 +67,10 @@ publishing {
 repositories {
     maven {
         url "https://maven.shedaniel.me"
+    }
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
     }
 }
 
