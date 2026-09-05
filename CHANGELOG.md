@@ -1,1 +1,2 @@
-- Fixed client-only mixins being incorrectly loaded on dedicated servers.
+- Small bug fix
+- Added Hungarian Language
