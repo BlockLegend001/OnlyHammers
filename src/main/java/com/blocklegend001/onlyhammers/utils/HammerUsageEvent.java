@@ -28,6 +28,7 @@ public class HammerUsageEvent implements PlayerBlockBreakEvents.Before{
         if (!(player instanceof ServerPlayer serverPlayer)) return true;
         ItemStack mainHandItem = player.getMainHandItem();
         if (!(mainHandItem.getItem() instanceof Hammer hammer)) return true;
+        if (state.getDestroySpeed(world, pos) == 0.0F)  return true;
 
         if (HARVESTED_BLOCKS.contains(pos)) return true;
 
