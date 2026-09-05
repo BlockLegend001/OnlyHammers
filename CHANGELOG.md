@@ -1,1 +1,2 @@
-- Fixed Copper Excavator Recipe
+- Small bug fix
+- Added Hungarian Language

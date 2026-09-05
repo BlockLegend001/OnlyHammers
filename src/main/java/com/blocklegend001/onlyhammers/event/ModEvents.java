@@ -20,12 +20,14 @@ public class ModEvents {
     private static final Set<BlockPos> HARVESTED_BLOCKS = new HashSet<>();
 
     @SubscribeEvent
-    public static boolean onExcavatorUsage(BreakBlockEvent event) {
+    public static boolean onHammerUsage(BreakBlockEvent event) {
         Player player = event.getPlayer();
         ItemStack mainHandItem = player.getMainHandItem();
 
         if (!(player instanceof ServerPlayer serverPlayer)) return true;
         if (!(mainHandItem.getItem() instanceof Hammer hammer)) return true;
+        if (event.getState().getDestroySpeed(event.getLevel(), event.getPos()) == 0.0F) return true;
+
         if (HARVESTED_BLOCKS.contains(event.getPos())) return true;
 
         boolean isSneaking = player.isCrouching() || player.isShiftKeyDown();
