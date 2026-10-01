@@ -1,0 +1,99 @@
+[08feb2026 20:30:46.697] [main/INFO] [net.neoforged.fml.startup.Entrypoint/]: JVM Uptime at startup: 129ms
+[08feb2026 20:30:46.704] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Starting FancyModLoader version 10.0.36 (CLIENT in DEV)
+[08feb2026 20:30:46.705] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Game directory: D:\Programmazione\Mod\Only Hammers\NEOFORGE\1.21.11\runs\client
+[08feb2026 20:30:46.763] [main/INFO] [net.neoforged.fml.loading.EarlyServiceDiscovery/]: Found 2 early service jars (out of 108) in 25ms
+[08feb2026 20:30:46.764] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Early Services:
+[08feb2026 20:30:46.764] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/earlydisplay/10.0.36/dbd0e11d545443f602addede111c39d9639708f9/earlydisplay-10.0.36.jar
+[08feb2026 20:30:46.765] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged.fancymodloader/loader/10.0.36/f72ab4d3e755fe736829883d90430a281527aca/loader-10.0.36.jar
+[08feb2026 20:30:46.771] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[08feb2026 20:30:47.397] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.locators.GameLocator/]: Detected a joined NeoForge and Minecraft configuration. Applying filtering...
+[08feb2026 20:30:47.554] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.locators.InDevFolderLocator/CORE]: Got mod coordinates 1.21.11%%D:\Programmazione\Mod\Only Hammers\NEOFORGE\1.21.11\build\resources\main;1.21.11%%D:\Programmazione\Mod\Only Hammers\NEOFORGE\1.21.11\build\classes\java\main from env
+[08feb2026 20:30:47.612] [fml-loadingscreen/INFO] [net.neoforged.fml.earlydisplay.render.LoadingScreenRenderer/]: GL info: NVIDIA GeForce RTX 4050 Laptop GPU/PCIe/SSE2 GL version 3.3.0 NVIDIA 591.74, NVIDIA Corporation
+[08feb2026 20:30:47.761] [ForkJoinPool.commonPool-worker-8/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:mixinextras.neoforge. Using jar(C:/Users/rosar/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-neoforge/0.5.0/d734b83ce6542bb70ea31755c1595b88992dbe65/mixinextras-neoforge-0.5.0.jar)
+[08feb2026 20:30:47.761] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[08feb2026 20:30:47.763] [ForkJoinPool.commonPool-worker-8/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Minecraft 1.21.11 (minecraft)
+		NeoForge 21.11.12-beta (neoforge)
+		OnlyHammers 1.21.11-0.2 (onlyhammers)
+[08feb2026 20:30:48.135] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=FML Env=CLIENT
+[08feb2026 20:30:48.205] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Loading FML Plugins:
+[08feb2026 20:30:48.206] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]:  - C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/21.11.12-beta/3a9575466344f1dd59971b716063420063a125c2/neoforge-21.11.12-beta-universal.jar > net.neoforged.neoforge-coremods-21.11.12-beta.jar
+[08feb2026 20:30:48.427] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Building game content classloader:
+ - minecraft (composite(filtered(jar(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.11.12-beta/neoforge-21.11.12-beta.jar)), filtered(jar(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/21.11.12-beta/neoforge-21.11.12-beta.jar))))
+ - mixinextras.neoforge (jar(C:/Users/rosar/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-neoforge/0.5.0/d734b83ce6542bb70ea31755c1595b88992dbe65/mixinextras-neoforge-0.5.0.jar))
+ - neoforge (composite(filtered(jar(C:/Users/rosar/.gradle/caches/modules-2/files-2.1/net.neoforged/neoforge/21.11.12-beta/3a9575466344f1dd59971b716063420063a125c2/neoforge-21.11.12-beta-universal.jar))))
+ - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
+ - onlyhammers (composite(folder(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/build/resources/main), folder(D:/Programmazione/Mod/Only Hammers/NEOFORGE/1.21.11/build/classes/java/main)))
+[08feb2026 20:30:48.455] [main/INFO] [net.neoforged.fml.loading.FMLLoader/]: Built game content classloader in 53ms
+[08feb2026 20:30:48.629] [main/WARN] [mixin/]: Reference map 'onlyhammers.refmap.json' for onlyhammers.mixins.json could not be read. If this is a development environment you can ignore this message
+[08feb2026 20:30:50.497] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 290 Datafixer optimizations took 642 milliseconds
+[08feb2026 20:30:50.752] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[08feb2026 20:30:55.857] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08feb2026 20:30:55.860] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08feb2026 20:30:55.863] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08feb2026 20:30:55.865] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08feb2026 20:30:55.866] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08feb2026 20:30:55.868] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [waypoint, modify, waypoint, color, reset] and [waypoint, modify, waypoint, color, color] with inputs: [reset]
+[08feb2026 20:30:55.929] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.11.12-beta, for MC 1.21.11
+[08feb2026 20:30:56.522] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[08feb2026 20:30:56.550] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[08feb2026 20:30:56.640] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[08feb2026 20:30:56.751] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[08feb2026 20:30:57.443] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/onlyhammers, mod/neoforge
+[08feb2026 20:30:58.118] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_pua-17.0.01.hex, loading
+[08feb2026 20:30:58.118] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-17.0.01.hex, loading
+[08feb2026 20:30:58.331] [resourceLoad/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-17.0.01.hex, loading
+[08feb2026 20:31:00.034] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Altoparlanti (Maonocaster G1 Neo)
+[08feb2026 20:31:00.039] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[08feb2026 20:31:00.040] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[08feb2026 20:31:00.062] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[08feb2026 20:31:00.063] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[08feb2026 20:31:00.111] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[08feb2026 20:31:00.113] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[08feb2026 20:31:00.120] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[08feb2026 20:31:00.194] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[08feb2026 20:31:00.196] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[08feb2026 20:31:00.197] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[08feb2026 20:31:00.205] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[08feb2026 20:31:00.207] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[08feb2026 20:31:00.238] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[08feb2026 20:31:00.269] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[08feb2026 20:31:00.271] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
+[08feb2026 20:31:00.273] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[08feb2026 20:31:00.484] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[08feb2026 20:31:05.430] [Render thread/WARN] [net.neoforged.neoforge.common.CommonHooks/WP]: The following mods have version differences that were not resolved:
+onlyhammers (version 1.21.11-0.1 -> 1.21.11-0.2)
+Things may not work well.
+[08feb2026 20:31:07.096] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1481 recipes
+[08feb2026 20:31:07.113] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1595 advancements
+[08feb2026 20:31:07.117] [Render thread/INFO] [net.neoforged.neoforge.common.crafting.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[08feb2026 20:31:07.328] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.11
+[08feb2026 20:31:07.328] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[08feb2026 20:31:08.480] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Selecting global world spawn...
+[08feb2026 20:31:09.134] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 0 persistent chunks...
+[08feb2026 20:31:09.134] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[08feb2026 20:31:09.137] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[08feb2026 20:31:09.606] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Loading 48 chunks for player spawn...
+[08feb2026 20:31:09.606] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[08feb2026 20:31:09.606] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Preparing spawn area: 16%
+[08feb2026 20:31:09.872] [Server thread/INFO] [net.minecraft.server.level.progress.LoggingLevelLoadListener/]: Time elapsed: 1392 ms
+[08feb2026 20:31:10.259] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:3ed8fe13] logged in with entity id 31 at (-16.5, 63.0, 23.5)
+[08feb2026 20:31:10.337] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[08feb2026 20:31:10.493] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Ignoring chat session from Dev due to missing Services public key
+[08feb2026 20:31:10.499] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[08feb2026 20:31:10.523] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[08feb2026 20:31:10.525] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[08feb2026 20:31:10.557] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[08feb2026 20:31:10.736] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[08feb2026 20:31:10.916] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 8.
+[08feb2026 20:31:10.955] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[08feb2026 20:31:11.025] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[08feb2026 20:31:11.093] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[08feb2026 20:31:11.296] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[08feb2026 20:31:11.355] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[08feb2026 20:31:11.519] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[08feb2026 20:31:12.292] [Render thread/INFO] [net.minecraft.client.renderer.DynamicUniformStorage/]: Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[08feb2026 20:31:16.304] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 21 advancements
