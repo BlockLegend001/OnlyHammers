@@ -17,3 +17,4 @@
 /give Dev minecraft:diamond_ore 64
 /gamemode creative
 /gamemode survival
+/give Dev minecraft:torch 64
