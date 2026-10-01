@@ -1,0 +1,18 @@
+{
+  "item.onlyhammers.wooden_hammer": "Fakalapács",
+  "item.onlyhammers.stone_hammer": "Kőkalapács",
+  "item.onlyhammers.copper_hammer": "Rézkalapács",
+  "item.onlyhammers.iron_hammer": "Vaskalapács",
+  "item.onlyhammers.gold_hammer": "Aranykalapács",
+  "item.onlyhammers.lapis_hammer": "Lazuritkalapács",
+  "item.onlyhammers.redstone_hammer": "Vöröskőkalapács",
+  "item.onlyhammers.diamond_hammer": "Gyémántkalapács",
+  "item.onlyhammers.emerald_hammer": "Smaragdkalapács",
+  "item.onlyhammers.obsidian_hammer": "Obszidiánkalapács",
+  "item.onlyhammers.netherite_hammer": "Netheritkalapács",
+
+  "key.category.onlyhammers.showoutline": "Csak Kalapácsok és Feltárók",
+  "key.onlyhammers.showoutline": "Körvonal Engedélyezése/Letiltása",
+
+  "itemGroup.onlyhammers.onlyhammers": "Csak Kalapácsok és Feltárók"
+}
